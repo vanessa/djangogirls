@@ -3,6 +3,7 @@
 This is run via a scheduled task every hour and checks if there are any emails that need sending.
 
 """
+from datetime import timedelta
 import logging
 from smtplib import SMTPException
 
@@ -96,11 +97,12 @@ def send_offer_help_emails():
         Because of dates being approximate, we sometimes can't tell if an event in the current month
         has happened or not on the db-level. So we need to catch it while it's more than a month away.
     """
+    today = timezone.now().date()
+
     events = Event.objects.filter(
         is_on_homepage=True,
-        date__gt=timezone.now(),
-        date__lte=timezone.now() + timezone.timedelta(weeks=6),
-        created_at__lte=timezone.now() - timezone.timedelta(weeks=2),
+        date__range=[today, today + timedelta(weeks=6)],
+        created_at__lte=today - timezone.timedelta(weeks=2),
         offer_help_email_sent__isnull=True
     ).filter(
         Q(is_page_live=False) | Q(form=None)

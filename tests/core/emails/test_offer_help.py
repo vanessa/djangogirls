@@ -8,7 +8,7 @@ from core.management.commands import handle_emails
 from core.models import Event
 
 
-@pytest.fixture()
+@pytest.fixture
 def event():
     in_six_weeks = timezone.now() + timezone.timedelta(weeks=6)
 
@@ -92,3 +92,14 @@ def test_send_summary_checkin_to_hello(event, mailoutbox):
     assert mailoutbox[1].to == ["hello@djangogirls.org"]
     assert event.city in mailoutbox[0].body
     assert mailoutbox[1].subject == "Check-in email summary"
+
+
+def test_email_not_sent_to_event_with_open_applications(event, mailoutbox):
+    Form.objects.create(event=event)
+    event.created_at = timezone.now() - timezone.timedelta(weeks=3)
+    event.save()
+    handle_emails.send_offer_help_emails()
+
+    assert event.is_page_live is True
+    assert event.form.application_open
+    assert len(mailoutbox) == 1
