@@ -19,7 +19,7 @@ def test_adding_default_questions(event):
 
 def test_no_application_dates(event):
     form = Form.objects.create(event=event)
-    assert form.application_open is True
+    assert form.application_open is False
 
 
 def test_application_open(event):
