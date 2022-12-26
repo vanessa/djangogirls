@@ -80,7 +80,7 @@ class Form(models.Model):
     def application_open(self):
         if self.open_from and self.open_until:
             return self.open_from < timezone.now() < self.open_until
-        return True
+        return False
 
 
 class Question(models.Model):

@@ -95,11 +95,40 @@ def test_send_summary_checkin_to_hello(event, mailoutbox):
 
 
 def test_email_not_sent_to_event_with_open_applications(event, mailoutbox):
-    Form.objects.create(event=event)
+    form = Form.objects.create(event=event)
     event.created_at = timezone.now() - timezone.timedelta(weeks=3)
+    event.is_page_live = True # skip check-in email
     event.save()
+
     handle_emails.send_offer_help_emails()
 
-    assert event.is_page_live is True
-    assert event.form.application_open
-    assert len(mailoutbox) == 1
+    assert event.is_page_live
+    assert not event.form.application_open
+    assert len(mailoutbox) == 0
+
+    # Form open, page not live
+    event.date = timezone.now() + timezone.timedelta(days=15)
+    event.is_page_live = False
+    event.save()
+
+    form.open_from = timezone.now() - timezone.timedelta(days=1)
+    form.open_until = timezone.now() + timezone.timedelta(days=1)
+    form.save()
+
+    handle_emails.send_offer_help_emails()
+
+    need_help_emails = [
+        mail for mail in mailoutbox if mail.subject == "Need any help with your Django Girls Test City event?"]
+    assert len(need_help_emails) == 1
+
+    # No form, page live
+    form.delete()
+    event.is_page_live = True
+    event.save()
+
+    mailoutbox.clear()
+    handle_emails.send_offer_help_emails()
+
+    need_help_emails = [
+        mail for mail in mailoutbox if mail.subject == "Need any help with your Django Girls Test City event?"]
+    assert len(need_help_emails) == 1
