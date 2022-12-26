@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/DjangoGirls/djangogirls.svg?branch=master)](https://travis-ci.org/DjangoGirls/djangogirls) [![codecov](https://codecov.io/gh/DjangoGirls/djangogirls/branch/master/graph/badge.svg)](https://codecov.io/gh/DjangoGirls/djangogirls)
 
 
-This repository contains sources of Django application that powers [DjangoGirls.org](http://djangogirls.org/).
+This repository contains the Django application which powers [DjangoGirls.org](http://djangogirls.org/).
 
 ## What's in it?
 
-It's a simple CMS that contains 4 models:
+It's a simple CMS that contains 3 main models:
 
 - __Event__ - a list of events and their website configuration
 - __EventPageContent__ - blocks of content that are visible on the website
@@ -17,8 +17,9 @@ It's a simple CMS that contains 4 models:
 
 Simply go to command line and run this command:
 
-    python ./manage.py new_event
-
+```bash
+python ./manage.py new_event
+```
 And then follow the instructions.
 
 ## How to manage your website?
@@ -61,61 +62,85 @@ Please note that we use Python 3 only, so make sure that you use correct version
 
 ## Setting up a development environment
 
-First, clone the repository:
+First, fork and clone the repository:
 
-    git clone git@github.com:DjangoGirls/djangogirls.git
+```bash
+git clone git@github.com:your-username/djangogirls.git
+```
 
 Step into newly created `djangogirls` directory:
 
-    cd djangogirls
+```bash
+cd djangogirls
+```
 
-Create a new virtual environment (python <3.8) if needed. Then, install all the required dependencies.
+Create a new virtual environment (python 3.9) if needed. Then, install all the required dependencies.
 The dependencies are compiled by [pip-tools](https://github.com/jazzband/pip-tools), which
 compiles `requirements.txt` ensuring compatibility between packages.
 
-    pip install pip-tools
-    pip-sync
+```bash
+pip install pip-tools
+pip-sync
+```
 
 There is more information on how `pip-tools` work below.
 
 Start the [PostgreSQL database server](http://www.postgresql.org/docs/current/static/server-start.html) and enter the `psql` shell (you need to have [PostgreSQL](http://www.postgresql.org/download/) installed):
 
-    psql
+```bash
+psql
+```
 
 In the `psql` shell, create a database and a role with the necessary permissions:
 
-    CREATE DATABASE djangogirls;
-    CREATE ROLE postgres;
-    GRANT ALL privileges ON DATABASE djangogirls TO postgres;
-    ALTER ROLE postgres WITH LOGIN;
+```sql
+CREATE DATABASE djangogirls;
+CREATE ROLE postgres;
+GRANT ALL privileges ON DATABASE djangogirls TO postgres;
+ALTER ROLE postgres WITH LOGIN;
+```
 
 Exit the `psql` shell:
 
-    \q
+```bash
+\q
+```
 
 Run the migration to create database schema:
 
-    ./manage.py migrate
+```bash
+./manage.py migrate
+```
 
 Load sample data to the database
 
-    ./manage.py loaddata sample_db.json
+```bash
+./manage.py loaddata sample_db.json
+```
 
 Create a user so you can login to the admin:
 
-    ./manage.py createsuperuser
+```bash
+./manage.py createsuperuser
+```
 
 Install dependencies for static files:
 
-    npm install
+```bash
+npm install
+```
 
 Compile CSS and JS files:
 
-    gulp watch
+```bash
+gulp watch
+```
 
 Run your local server:
 
-     ./manage.py runserver
+```bash
+./manage.py runserver
+```
 
 :tada: You're done.
 
@@ -124,35 +149,45 @@ Run your local server:
 
 You can run the tests like this:
 
-	python -m pytest
+```bash
+python -m pytest
+```
 
 Or if you want coverage reports:
 
-	python -m pytest --cov
-
+```bash
+python -m pytest --cov
+```
 
 For a coverage report with information about missing lines, run this:
 
-	python -m pytest --cov-report term-missing --cov
-
+```bash
+python -m pytest --cov-report term-missing --cov
+```
 
 ### Static files
 
 We're using a [Stylus](http://learnboost.github.io/stylus/) as our CSS pre-processor. [Get styling with Stylus](http://learnboost.github.io/stylus/#get-styling-with-stylus).
 
-This means you shouldn't change any css files, but `.styl` files. They're in /static/source/css/ directory.
+This means you shouldn't change any css files, but `.styl` files. They're in `/static/source/css/` directory.
 
 Autocompiling of `.styl` files to `.css`:
 
-    npx gulp watch
+```bash
+npx gulp watch
+```
 
 We're also using gulp for our static files builds (see [below](#gulp-tasks)). To build static files for production, run this:
 
-    npx gulp build
+```bash
+npx gulp build
+```
 
 For local development:
 
-    npx gulp local
+```bash
+npx gulp local
+```
 
 #### Gulp Tasks
 
@@ -228,6 +263,49 @@ from `requirements.txt`.
 
 For example:
 
-    pip-compile -U
+```bash
+pip-compile -U
+pip-sync
+```
 
-    pip-sync
+### Handling environment variables
+
+The `requirements.txt` installs [python-dotenv](https://pypi.org/project/python-dotenv/) which provides the option for
+developers to load environment variables via a single file.
+
+You'll see `.environment-example` in the project root. This contains environment variables used by the project so that
+you can create your own copy of this and load it with values relevant to your development environment.
+
+To make use of this feature, create a copy of the example file and call it `.environment`. This file will be ignored by
+version control, but loaded by `manage.py`. So when you run django commands like `manage.py runserver` during development
+`python-dotenv` will load the environment variables from your `.environment` file so that they are available to the application.
+
+This is an optional feature. If you do not have a `.environment` file then it won't impact on the application at all.
+
+### Before you Open a Pull Request
+
+This project runs a linting check with [flake8](https://pypi.org/project/flake8/) whenever a pull request is merged. Before you create a pull request, it's advisable to fix any linting issues locally to avoid errors while merging. In order to have flake8 run in your local machine automatically you can do the following:
+
+1) Run `pip install pre-commit` to install [pre-commit](https://pypi.org/project/pre-commit/). This package helps setting up git hooks.
+
+2) Run `pre-commit install` to install the git hook. After this, whenever you run `git commit` in your local machine, flake8 will run and report any linting errors that it found.
+
+3) If you've already committed your changes before installing `pre-commit`, you can follow steps 1 and 2 and then run `pre-commit run --all-files` to run flake8 against all of the files.
+
+## Help with translation of the website
+Join us on [poeditor.com](https://poeditor.com/join/project?hash=n5I3liMVyj) to help with translation of the website so 
+that non-English speakers can view the website based on their locale.
+
+Languages available for translation are;
+
+* French
+* German
+* Korean
+* Persian
+* Portuguese
+* Portuguese (BR)
+* Russian
+* Spanish
+
+See [issue 571- Website internationalization/translations ](https://github.com/DjangoGirls/djangogirls/issues/571) for further details. 
+Alternatively submit the pull request to the `translations` branch.

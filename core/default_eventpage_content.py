@@ -3,7 +3,8 @@ import random
 
 from django.conf import settings
 from django.core.files.uploadedfile import UploadedFile
-
+from django.utils.translation import gettext_lazy as _
+from core.flickr_api_integration import select_random_flickr_photos
 
 DEFAULT_BACKGROUND_PHOTOS = {
     'about': [
@@ -24,6 +25,9 @@ DEFAULT_BACKGROUND_PHOTOS = {
 }
 
 
+four_random_flickr_photos = select_random_flickr_photos(4)
+
+
 def get_random_photo(section):
     if section in DEFAULT_BACKGROUND_PHOTOS:
         photos = DEFAULT_BACKGROUND_PHOTOS[section]
@@ -33,12 +37,19 @@ def get_random_photo(section):
     return None
 
 
+def select_photo(section):
+    if not four_random_flickr_photos:
+        return get_random_photo(section)
+    else:
+        return four_random_flickr_photos.pop(0)
+
+
 def get_default_eventpage_data():
     return [
         {
             'name': 'about',
             'is_public': True,
-            'background': get_random_photo('about'),
+            'background': select_photo('about'),
             'template': 'default/about.html'
         },
         {
@@ -49,7 +60,7 @@ def get_default_eventpage_data():
         {
             'name': 'apply',
             'is_public': True,
-            'background': get_random_photo('apply'),
+            'background': select_photo('apply'),
             'template': 'default/apply.html'
         },
         {
@@ -60,7 +71,7 @@ def get_default_eventpage_data():
         {
             'name': 'coach',
             'is_public': True,
-            'background': get_random_photo('coach'),
+            'background': select_photo('coach'),
             'template': 'default/coach.html'
         },
         {
@@ -71,7 +82,7 @@ def get_default_eventpage_data():
         {
             'name': 'footer',
             'is_public': True,
-            'background': get_random_photo('footer'),
+            'background': select_photo('footer'),
             'template': 'default/footer.html'
         },
     ]
@@ -79,9 +90,9 @@ def get_default_eventpage_data():
 
 def get_default_menu():
     return [
-        {'title': 'About', 'url': '#values'},
-        {'title': 'Apply for a pass!', 'url': '#apply'},
-        {'title': 'FAQ', 'url': '#faq'},
-        {'title': 'Become a coach', 'url': '#coach'},
-        {'title': 'Partners', 'url': '#partners'},
+        {'title': _('About'), 'url': '#values'},
+        {'title': _('Apply for a pass!'), 'url': '#apply'},
+        {'title': _('FAQ'), 'url': '#faq'},
+        {'title': _('Become a coach'), 'url': '#coach'},
+        {'title': _('Partners'), 'url': '#partners'},
     ]

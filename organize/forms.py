@@ -1,19 +1,23 @@
 from django import forms
+from django.utils.translation import gettext_lazy as _
 from django_countries import countries
 from django_countries.fields import LazyTypedChoiceField
 from django_date_extensions.fields import ApproximateDateFormField
 
 from core.models import Event
-from core.validators import validate_approximatedate, validate_event_date, validate_future_date
+from core.validators import (
+    validate_approximatedate, validate_event_date,
+    validate_future_date, validate_local_restrictions
+)
 from .constants import INVOLVEMENT_CHOICES
 
 PREVIOUS_ORGANIZER_CHOICES = (
-    (True, "Yes, I organized Django Girls"),
-    (False, "No, it’s my first time organizing Django Girls"))
+    (True, _("Yes, I organized Django Girls")),
+    (False, _("No, it’s my first time organizing Django Girls")))
 
 WORKSHOP_CHOICES = (
-    (True, "Remote"),
-    (False, "In-Person"))
+    (True, _("Remote")),
+    (False, _("In-Person")))
 
 
 class PreviousEventForm(forms.Form):
@@ -24,10 +28,12 @@ class PreviousEventForm(forms.Form):
         required=True)
     previous_event = forms.ModelChoiceField(
         queryset=Event.objects.past(),
-        empty_label="Choose event",
+        empty_label=_("Choose event"),
         required=False,
         widget=forms.Select(
-            attrs={'aria-label': 'Choose event', 'class': 'linked-select'}))
+            attrs={'aria-label': _('Choose event'), 'class': 'linked-select'}
+        )
+    )
 
     def clean(self):
         has_organized_before = self.cleaned_data.get('has_organized_before')
@@ -35,7 +41,8 @@ class PreviousEventForm(forms.Form):
         if has_organized_before is True and not previous_event:
             self.add_error(
                 'has_organized_before',
-                'You have to choose an event.')
+                _('You have to choose an event.')
+            )
 
         return self.cleaned_data
 
@@ -99,20 +106,31 @@ OrganizersFormSet = forms.formset_factory(
 
 class WorkshopForm(forms.Form):
     date = ApproximateDateFormField(
-        widget=forms.TextInput(attrs={'class': 'compact-input'}))
+        widget=forms.TextInput(attrs={'class': 'compact-input'})
+    )
     city = forms.CharField(
         required=True,
         max_length=200,
-        widget=forms.TextInput(attrs={'class': 'compact-input'}))
+        widget=forms.TextInput(attrs={'class': 'compact-input'})
+    )
     country = LazyTypedChoiceField(
-        choices=[(None, 'Choose country')] + list(countries))
+        choices=[(None, 'Choose country')] + list(countries)
+    )
     venue = forms.CharField(
-        widget=forms.Textarea(attrs={'class': 'compact-input'}))
+        widget=forms.Textarea(attrs={'class': 'compact-input'})
+    )
     sponsorship = forms.CharField(
-        widget=forms.Textarea(attrs={'class': 'compact-input'}))
+        widget=forms.Textarea(attrs={'class': 'compact-input'})
+    )
     coaches = forms.CharField(
-        widget=forms.Textarea(attrs={'class': 'compact-input'}))
+        widget=forms.Textarea(attrs={'class': 'compact-input'})
+    )
+    local_restrictions = forms.CharField(
+        required=True,
+        widget=forms.Textarea(attrs={'class': 'compact-input'})
+    )
     safety = forms.CharField(
+        required=True,
         widget=forms.Textarea(attrs={'class': 'compact-input'})
     )
     diversity = forms.CharField(
@@ -121,6 +139,7 @@ class WorkshopForm(forms.Form):
     additional = forms.CharField(
         widget=forms.Textarea(attrs={'class': 'compact-input'})
     )
+    confirm_covid_19_protocols = forms.BooleanField()
 
     def clean_date(self):
         date = self.cleaned_data.get('date')
@@ -134,6 +153,12 @@ class WorkshopForm(forms.Form):
     def get_data_for_saving(self):
         return self.cleaned_data
 
+    def clean_local_restrictions(self):
+        local_restrictions = self.cleaned_data.get('local_restrictions')
+        # Check if organizer provides link to government website
+        validate_local_restrictions(local_restrictions)
+        return local_restrictions
+
 
 class RemoteWorkshopForm(forms.Form):
     date = ApproximateDateFormField(
@@ -143,7 +168,7 @@ class RemoteWorkshopForm(forms.Form):
         max_length=200,
         widget=forms.TextInput(attrs={'class': 'compact-input'}))
     country = LazyTypedChoiceField(
-        choices=[(None, 'Choose country')] + list(countries))
+        choices=[(None, _('Choose country'))] + list(countries))
     sponsorship = forms.CharField(
         widget=forms.Textarea(attrs={'class': 'compact-input'}))
     coaches = forms.CharField(

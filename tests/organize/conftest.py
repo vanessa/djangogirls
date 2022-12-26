@@ -168,9 +168,11 @@ def previous_organizer_in_person(past_event):
         'workshop-venue': 'Beira Hall',
         'workshop-sponsorship': 'My employer will sponsor the event.',
         'workshop-coaches': 'My colleagues will coach at the event.',
+        'workshop-local_restrictions': 'All restrictions relaxed. https://somegov.gov',
         'workshop-safety': 'Social distancing',
         'workshop-diversity': 'Promote on social media and use videos',
         'workshop-additional': 'None',
+        'workshop-confirm_covid_19_protocols': True,
         'organize_form_wizard-current_step': 'workshop'
     }
 
@@ -220,9 +222,11 @@ def new_organizer_in_person():
         'workshop-venue': 'Baixa Mall',
         'workshop-sponsorship': 'We have a few local companies we can approach.',
         'workshop-coaches': 'We have many Python developers here.',
+        'workshop-local_restrictions': 'All restrictions relaxed. https://somegov.gov',
         'workshop-safety': 'We will practise social distancing, wear masks and sanitize hands,',
         'workshop-diversity': 'Promote on social media and use videos',
         'workshop-additional': 'None',
+        'workshop-confirm_covid_19_protocols': True,
         'organize_form_wizard-current_step': 'workshop'
     }
 
@@ -240,15 +244,17 @@ def new_organizer_in_person():
 def workshop_form_valid_date():
     event_date = date.today() + timedelta(days=100)
     data = {
-        'date': '{0}-{1}-{2}'.format(event_date.year, event_date.month, event_date.day),
+        'date': f'{event_date.year}-{event_date.month}-{event_date.day}',
         'city': 'Gaberone',
         'country': 'BW',
         'venue': 'Baixa Mall',
         'sponsorship': 'We have a few local companies we can approach.',
         'coaches': 'We have many Python developers here.',
+        'local_restrictions': 'Maximum number of attendees is 50. https://somegovt.com/',
         'safety': 'We will practise social distancing, wear masks and sanitize hands,',
         'diversity': 'Promote on social media and use videos',
-        'additional': 'None'
+        'additional': 'None',
+        'confirm_covid_19_protocols': True
     }
     return data
 
@@ -257,7 +263,7 @@ def workshop_form_valid_date():
 def workshop_form_too_close():
     event_date = date.today() + timedelta(days=30)
     data = {
-        'date': '{0}-{1}-{2}'.format(event_date.year, event_date.month, event_date.day),
+        'date': f'{event_date.year}-{event_date.month}-{event_date.day}',
         'city': 'Gaberone',
         'country': 'BW',
         'venue': 'Baixa Mall',
@@ -305,7 +311,7 @@ def workshop_remote_form_valid_date():
 def workshop_remote_form_date_too_close():
     event_date = date.today() + timedelta(days=30)
     data = {
-        'date': '{0}-{1}-{2}'.format(event_date.year, event_date.month, event_date.day),
+        'date': f'{event_date.year}-{event_date.month}-{event_date.day}',
         'city': 'Gaberone',
         'country': 'BW',
         'sponsorship': 'We have willing sponsors starting with my employer.',
@@ -442,3 +448,22 @@ def previous_deployed_application():
         main_organizer_last_name='Smith',
         status='deployed'
     )
+
+
+@pytest.fixture
+def workshop_form_invalid_no_link():
+    event_date = date.today() + timedelta(days=100)
+    data = {
+        'date': f'{event_date.year}-{event_date.month}-{event_date.day}',
+        'city': 'Gaberone',
+        'country': 'BW',
+        'venue': 'Baixa Mall',
+        'sponsorship': 'We have a few local companies we can approach.',
+        'coaches': 'We have many Python developers here.',
+        'local_restrictions': 'Maximum number of attendees is 50 and social distancing of 1.5m apart.',
+        'safety': 'We will practise social distancing, wear masks and sanitize hands,',
+        'diversity': 'Promote on social media and use videos',
+        'additional': 'None',
+        'confirm_covid_19_protocols': True
+    }
+    return data
