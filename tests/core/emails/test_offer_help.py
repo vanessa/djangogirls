@@ -97,7 +97,7 @@ def test_send_summary_checkin_to_hello(event, mailoutbox):
 def test_email_not_sent_to_event_with_open_applications(event, mailoutbox):
     form = Form.objects.create(event=event)
     event.created_at = timezone.now() - timezone.timedelta(weeks=3)
-    event.is_page_live = True # skip check-in email
+    event.is_page_live = True  # skip check-in email
     event.save()
 
     handle_emails.send_offer_help_emails()
