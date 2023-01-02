@@ -2,8 +2,13 @@ const fs = require("fs");
 const esbuild = require("esbuild");
 const { program } = require("commander");
 
-const JS_FILES_PATH = "static/source/js";
-const CSS_FILES_PATH = "static/source/css";
+const paths = {
+  cssSourcePath: "static/source/css",
+  jsSourcePath: "static/source/js/index.js",
+  outdir: "static/build",
+  devOutdir: "static/local",
+  metafilePath: (outdir) => `${outdir}/metafile.json`,
+};
 
 program.option("-d, --dev", "Development mode", false);
 program.parse();
@@ -19,34 +24,41 @@ const main = async () => {
 
   try {
     const buildOptions = getBuildOptions(isDevelopment);
-    await esbuild.build(buildOptions);
+    const result = await esbuild.build(buildOptions);
     if (!isDevelopment) {
-      console.log("JS files built");
+      console.log(`JS files built to ${buildOptions.outdir}`);
     }
+    fs.writeFileSync(
+      paths.metafilePath(buildOptions.outdir),
+      JSON.stringify(result.metafile, null, 2)
+    );
   } catch (error) {
     console.error(error);
   }
 };
 
 const getBuildOptions = (isDevelopment) => {
-  const javascriptFiles = fs
-    .readdirSync(JS_FILES_PATH)
-    .filter((file) => file.endsWith(".js"));
-
   const cssFiles = fs
-    .readdirSync(CSS_FILES_PATH)
+    .readdirSync(paths.cssSourcePath)
     .filter((file) => file.endsWith(".css"));
 
   const buildOptions = {
     entryPoints: [
-      ...javascriptFiles.map((file) => `${JS_FILES_PATH}/${file}`),
-      ...cssFiles.map((file) => `${CSS_FILES_PATH}/${file}`),
+      paths.jsSourcePath,
+      ...cssFiles.map((file) => `${paths.cssSourcePath}/${file}`),
     ],
-    outdir: "static/build",
+    entryNames: "[dir]/[name]-[hash]",
+    outdir: isDevelopment ? paths.devOutdir : paths.outdir,
+    minify: true,
+    bundle: true,
+    metafile: true,
+    loader: {
+      ".png": "file",
+      ".jpg": "file",
+    },
   };
 
   if (isDevelopment) {
-    buildOptions.outdir = "static/local";
     buildOptions.watch = {
       onRebuild(error, result) {
         if (error) {
@@ -56,8 +68,6 @@ const getBuildOptions = (isDevelopment) => {
         }
       },
     };
-  } else {
-    buildOptions.minify = true;
   }
 
   return buildOptions;

@@ -157,7 +157,7 @@ a:hover {
     float: left;
 }
 .with-background {
-    background: url("../img/photos/photo1.jpg") 50% 0 no-repeat fixed;
+    background: url("../img/global/mainphoto.jpg") 50% 0 no-repeat fixed;
     background-size: cover;
     height: auto;
     color: #fff;
@@ -236,7 +236,7 @@ a:hover {
     padding-top: 30px;
 }
 #yourcity {
-    background: url("../img/photos/photo2.jpg") 50% 0 no-repeat fixed;
+    background: url("../img/global/mainphoto.jpg") 50% 0 no-repeat fixed;
     background-size: cover;
 }
 .map {

@@ -268,7 +268,7 @@ span.highlighted-number {
 #events .event {
     margin: 15px 15px 15px 15px;
     padding: 0;
-    background: url("../img/global/krakow.png") no-repeat;
+    background: url("../img/global/mainphoto.jpg") no-repeat;
     background-size: cover;
     width: calc(33% - 30px);
     height: 210px;

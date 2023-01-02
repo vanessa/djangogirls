@@ -15,7 +15,7 @@
   <meta property="og:image" content="{% block og_image %}https://raw.githubusercontent.com/olasitarska/djangogirls/gh-pages/resources/graphics/logo_square.png{% endblock %}" />
 
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Lora:400,700,400i,700i/Roboto:300,400,300i,400i">
-  {% block main_stylesheet %}<link rel="stylesheet" type="text/css" href="{% static_rev 'css/global.css' %}" media="screen">{% endblock %}
+  {% block main_stylesheet %}<link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" media="screen">{% endblock %}
   {% block extra_css %}{% endblock %}
 
   <script type="text/javascript" src="{% static 'vendor/js/jquery.min.js' %}"></script>

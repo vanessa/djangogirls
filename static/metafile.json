@@ -1,0 +1,263 @@
+{
+  "inputs": {
+    "node_modules/jquery/dist/jquery.js": {
+      "bytes": 293671,
+      "imports": []
+    },
+    "static/source/js/applications.js": {
+      "bytes": 2896,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "static/source/js/event.js": {
+      "bytes": 749,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "static/source/js/global.js": {
+      "bytes": 602,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "static/source/js/organize.js": {
+      "bytes": 2341,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "static/source/js/index.js": {
+      "bytes": 83,
+      "imports": [
+        {
+          "path": "static/source/js/applications.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "static/source/js/event.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "static/source/js/global.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "static/source/js/organize.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "static/source/css/admin.css": {
+      "bytes": 226,
+      "imports": []
+    },
+    "static/source/css/another.css": {
+      "bytes": 25,
+      "imports": []
+    },
+    "static/source/css/common.css": {
+      "bytes": 2064,
+      "imports": []
+    },
+    "static/source/img/global/mainphoto.jpg": {
+      "bytes": 1314135,
+      "imports": []
+    },
+    "static/source/img/photos/apply.jpg": {
+      "bytes": 1242485,
+      "imports": []
+    },
+    "static/source/css/event.css": {
+      "bytes": 9061,
+      "imports": [
+        {
+          "path": "static/source/img/global/mainphoto.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/source/img/global/mainphoto.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/source/img/photos/apply.jpg",
+          "kind": "url-token"
+        }
+      ]
+    },
+    "static/source/img/global/mainphoto-04122015.jpg": {
+      "bytes": 894910,
+      "imports": []
+    },
+    "static/source/css/global.css": {
+      "bytes": 22929,
+      "imports": [
+        {
+          "path": "static/source/img/global/mainphoto-04122015.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/source/img/global/mainphoto.jpg",
+          "kind": "url-token"
+        }
+      ]
+    },
+    "static/source/css/test.css": {
+      "bytes": 26,
+      "imports": []
+    }
+  },
+  "outputs": {
+    "static/build/js/index-RCKKG7ES.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "static/source/js/index.js",
+      "inputs": {
+        "node_modules/jquery/dist/jquery.js": {
+          "bytesInOutput": 90597
+        },
+        "static/source/js/applications.js": {
+          "bytesInOutput": 2247
+        },
+        "static/source/js/event.js": {
+          "bytesInOutput": 489
+        },
+        "static/source/js/global.js": {
+          "bytesInOutput": 536
+        },
+        "static/source/js/organize.js": {
+          "bytesInOutput": 1582
+        },
+        "static/source/js/index.js": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 96358
+    },
+    "static/build/css/admin-EDZBBQSY.css": {
+      "imports": [],
+      "entryPoint": "static/source/css/admin.css",
+      "inputs": {
+        "static/source/css/admin.css": {
+          "bytesInOutput": 118
+        }
+      },
+      "bytes": 119
+    },
+    "static/build/css/another-OKWLULQD.css": {
+      "imports": [],
+      "entryPoint": "static/source/css/another.css",
+      "inputs": {
+        "static/source/css/another.css": {
+          "bytesInOutput": 16
+        }
+      },
+      "bytes": 17
+    },
+    "static/build/css/common-BDGHZH2C.css": {
+      "imports": [],
+      "entryPoint": "static/source/css/common.css",
+      "inputs": {
+        "static/source/css/common.css": {
+          "bytesInOutput": 1601
+        }
+      },
+      "bytes": 1602
+    },
+    "static/build/mainphoto-XGMTR5EV.jpg": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "static/source/img/global/mainphoto.jpg": {
+          "bytesInOutput": 1314135
+        }
+      },
+      "bytes": 1314135
+    },
+    "static/build/apply-O7XT7OI7.jpg": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "static/source/img/photos/apply.jpg": {
+          "bytesInOutput": 1242485
+        }
+      },
+      "bytes": 1242485
+    },
+    "static/build/css/event-2SKVTVIT.css": {
+      "imports": [
+        {
+          "path": "static/build/mainphoto-XGMTR5EV.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/build/mainphoto-XGMTR5EV.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/build/apply-O7XT7OI7.jpg",
+          "kind": "url-token"
+        }
+      ],
+      "entryPoint": "static/source/css/event.css",
+      "inputs": {
+        "static/source/css/event.css": {
+          "bytesInOutput": 6599
+        }
+      },
+      "bytes": 6600
+    },
+    "static/build/mainphoto-04122015-LZEWBQJX.jpg": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "static/source/img/global/mainphoto-04122015.jpg": {
+          "bytesInOutput": 894910
+        }
+      },
+      "bytes": 894910
+    },
+    "static/build/css/global-5ZM4DXR5.css": {
+      "imports": [
+        {
+          "path": "static/build/mainphoto-04122015-LZEWBQJX.jpg",
+          "kind": "url-token"
+        },
+        {
+          "path": "static/build/mainphoto-XGMTR5EV.jpg",
+          "kind": "url-token"
+        }
+      ],
+      "entryPoint": "static/source/css/global.css",
+      "inputs": {
+        "static/source/css/global.css": {
+          "bytesInOutput": 16333
+        }
+      },
+      "bytes": 16334
+    },
+    "static/build/css/test-VMWKDIJY.css": {
+      "imports": [],
+      "entryPoint": "static/source/css/test.css",
+      "inputs": {
+        "static/source/css/test.css": {
+          "bytesInOutput": 17
+        }
+      },
+      "bytes": 18
+    }
+  }
+}
