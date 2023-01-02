@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 $(document).ready(function () {
-  $("a[href*=#]").each(function () {
+  $("a[href=#]").each(function () {
     if (
       location.pathname.replace(/^\//, "") ==
         this.pathname.replace(/^\//, "") &&

@@ -1,13 +1,15 @@
-const fs = require("fs");
-const esbuild = require("esbuild");
 const { program } = require("commander");
+const esbuild = require("esbuild");
+const fs = require("fs");
+const fse = require("fs-extra");
 const log = require("fancy-log");
 
 const paths = {
   cssSourcePath: "static/source/css",
   jsSourcePath: "static/source/js/index.js",
+  imgSourcePath: "static/source/img",
   outdir: "static/build",
-  devOutdir: "static/local",
+  imgOutdir: (outdir) => `${outdir}/img`,
   metafilePath: (outdir) => `${outdir}/metafile.json`,
 };
 
@@ -26,13 +28,19 @@ const main = async () => {
   try {
     const buildOptions = getBuildOptions(isDevelopment);
     const result = await esbuild.build(buildOptions);
+
     if (!isDevelopment) {
       log.info(`JS files built to ${buildOptions.outdir}`);
     }
+
+    // Write metafile to build directory so it can be picked up by Django
     fs.writeFileSync(
       paths.metafilePath(buildOptions.outdir),
       JSON.stringify(result.metafile, null, 2)
     );
+
+    // Copy image files to build directory
+    fse.copySync(paths.imgSourcePath, paths.imgOutdir(buildOptions.outdir));
   } catch (error) {
     log.error(error);
   }
@@ -48,8 +56,7 @@ const getBuildOptions = (isDevelopment) => {
       paths.jsSourcePath,
       ...cssFiles.map((file) => `${paths.cssSourcePath}/${file}`),
     ],
-    entryNames: "[dir]/[name]-[hash]",
-    outdir: isDevelopment ? paths.devOutdir : paths.outdir,
+    outdir: paths.outdir,
     minify: true,
     bundle: true,
     metafile: true,
@@ -61,11 +68,11 @@ const getBuildOptions = (isDevelopment) => {
 
   if (isDevelopment) {
     buildOptions.watch = {
-      onRebuild(error, result) {
+      onRebuild(error) {
         if (error) {
           log.error(error);
         } else {
-          log.info("JS files built incrementally");
+          log.info("JS files successfully built");
         }
       },
     };
