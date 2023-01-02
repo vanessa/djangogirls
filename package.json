@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/DjangoGirls/djangogirls.git"
   },
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
   "bugs": {
     "url": "https://github.com/DjangoGirls/djangogirls/issues"
   },
@@ -25,5 +28,9 @@
     "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.5",
     "stylus": "^0.59.0"
+  },
+  "dependencies": {
+    "commander": "^9.4.1",
+    "esbuild": "^0.16.12"
   }
 }
