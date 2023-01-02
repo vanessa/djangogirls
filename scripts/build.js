@@ -1,6 +1,7 @@
 const fs = require("fs");
 const esbuild = require("esbuild");
 const { program } = require("commander");
+const log = require("fancy-log");
 
 const paths = {
   cssSourcePath: "static/source/css",
@@ -17,23 +18,23 @@ const main = async () => {
   const { dev: isDevelopment } = program.opts();
 
   if (isDevelopment) {
-    console.log("Starting development server...");
+    log.info("Started development server");
   } else {
-    console.log("Building JS files...");
+    log.info("Building JS files...");
   }
 
   try {
     const buildOptions = getBuildOptions(isDevelopment);
     const result = await esbuild.build(buildOptions);
     if (!isDevelopment) {
-      console.log(`JS files built to ${buildOptions.outdir}`);
+      log.info(`JS files built to ${buildOptions.outdir}`);
     }
     fs.writeFileSync(
       paths.metafilePath(buildOptions.outdir),
       JSON.stringify(result.metafile, null, 2)
     );
   } catch (error) {
-    console.error(error);
+    log.error(error);
   }
 };
 
@@ -62,9 +63,9 @@ const getBuildOptions = (isDevelopment) => {
     buildOptions.watch = {
       onRebuild(error, result) {
         if (error) {
-          console.error(error);
+          log.error(error);
         } else {
-          console.log("JS files built incrementally");
+          log.info("JS files built incrementally");
         }
       },
     };
