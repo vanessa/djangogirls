@@ -1,7 +1,7 @@
 const log = require("fancy-log");
 const esbuild = require("esbuild");
 const { program } = require("commander");
-const { getBuildOptions, copyImages, writeMetafile } = require("./utils");
+const { getBuildOptions, copyImages } = require("./utils");
 
 program.option("-d, --dev", "Development mode", false);
 program.parse();
@@ -17,16 +17,14 @@ const main = async () => {
 
   try {
     const buildOptions = getBuildOptions(isDevelopment);
-    const result = await esbuild.build(buildOptions);
+    await Promise.all([
+      esbuild.build(buildOptions),
+      copyImages(buildOptions.outdir),
+    ]);
 
     if (!isDevelopment) {
       log.info(`Static assets built successfully in ${buildOptions.outdir}`);
     }
-
-    await Promise.all([
-      copyImages(buildOptions.outdir),
-      writeMetafile(result.metafile, buildOptions.outdir),
-    ]);
   } catch (error) {
     log.error(error);
   }

@@ -60,6 +60,9 @@ const copyImages = (outdir) =>
 
 /**
  * Write metafile to build directory so it can be picked up by Django.
+ *
+ * **Note:** This is not needed right now as we're not hashing file names yet.
+ *
  * @param {string} content - The metafile content.
  * @param {string} outdir - The build directory.
  */
