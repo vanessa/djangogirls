@@ -1,9 +1,9 @@
-from captcha.fields import ReCaptchaField
 from django import forms
 from django.conf import settings
 from django.core.validators import validate_email
 from django.db import transaction
 from django.utils.translation import gettext_lazy as _
+from django_recaptcha.fields import ReCaptchaField
 
 from .models import Event
 
@@ -57,7 +57,16 @@ class EventChoiceField(forms.ModelChoiceField):
 class EventForm(forms.ModelForm):
     class Meta:
         model = Event
-        fields = ["city", "country", "date", "email", "latlng", "name", "page_title", "page_url"]
+        fields = [
+            "city",
+            "country",
+            "date",
+            "email",
+            "latlng",
+            "name",
+            "page_title",
+            "page_url",
+        ]
 
     @transaction.atomic
     def save(self, commit=True):

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: djangogirls\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-22 20:51+0100\n"
+"POT-Creation-Date: 2024-05-11 23:03+0000\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,112 +93,112 @@ msgstr "Der Bewerbungszeitraum beginnt am"
 msgid "Application process is open until"
 msgstr "Der Bewerbungszeitraum endet am"
 
-#: applications/models.py:86
+#: applications/models.py:91
 msgid "Question"
 msgstr "Frage"
 
-#: applications/models.py:87
+#: applications/models.py:92
 msgid "Additional help text to the question?"
 msgstr "Hilfetext zur Frage?"
 
-#: applications/models.py:88
+#: applications/models.py:93
 msgid "Type of the question"
 msgstr "Fragetyp"
 
-#: applications/models.py:89
+#: applications/models.py:94
 msgid "Is the answer to the question required?"
 msgstr "Wird eine Antwort auf diese Frage benötigt?"
 
-#: applications/models.py:93
+#: applications/models.py:98
 msgid "List all available options, separated with semicolon (;)"
 msgstr "Liste alle verfügbaren Optionen getrennt durch Semikolon (;) auf"
 
-#: applications/models.py:94 applications/models.py:99
+#: applications/models.py:99 applications/models.py:104
 #, fuzzy
 #| msgid "Used only with 'Choices' question type"
 msgid "Used only with \"Choices\" question type"
 msgstr "Wird nur beim Fragetyp \"Auswahlmöglichkeiten\" verwendet"
 
-#: applications/models.py:98
+#: applications/models.py:103
 msgid "Are there multiple choices allowed?"
 msgstr "Mehrfachoptionen möglich?"
 
-#: applications/models.py:101
+#: applications/models.py:106
 msgid "Position of the question"
 msgstr "Frageposition"
 
-#: applications/models.py:111
+#: applications/models.py:116
 msgid "You can only get choices for fields that have question_type == choices."
 msgstr ""
 "Sie können nur Auswahlmöglichkeiten für Felder erhalten, die question_type "
 "== choices haben."
 
-#: applications/models.py:118 templates/applications/applications.html:37
+#: applications/models.py:123 templates/applications/applications.html:37
 #: templates/applications/applications.html:86
 msgid "Application submitted"
 msgstr "Anmeldung ist eingereicht"
 
-#: applications/models.py:119 templates/applications/applications.html:38
+#: applications/models.py:124 templates/applications/applications.html:38
 #: templates/applications/applications.html:87
 msgid "Application accepted"
 msgstr "Anmeldung ist angenommen"
 
-#: applications/models.py:120 templates/applications/applications.html:39
+#: applications/models.py:125 templates/applications/applications.html:39
 #: templates/applications/applications.html:88
 msgid "Application rejected"
 msgstr "Anmeldung ist angelehnt"
 
-#: applications/models.py:121 templates/applications/applications.html:40
+#: applications/models.py:126 templates/applications/applications.html:40
 #: templates/applications/applications.html:89
 msgid "Application on waiting list"
 msgstr "Anmeldung auf der Warteliste"
 
-#: applications/models.py:122 templates/applications/applications.html:41
+#: applications/models.py:127 templates/applications/applications.html:41
 #: templates/applications/applications.html:90
 msgid "Applicant declined"
 msgstr "Bewerber abgelehnt"
 
-#: applications/models.py:129
+#: applications/models.py:134
 msgid "RSVP: Waiting for response"
 msgstr "RSVP: Warten auf Antwort"
 
-#: applications/models.py:130
+#: applications/models.py:135
 msgid "RSVP: Confirmed attendance"
 msgstr "RSVP: Teilnahme bestätigt"
 
-#: applications/models.py:131
+#: applications/models.py:136
 msgid "RSVP: Rejected invitation"
 msgstr "RSVP: Einladung abgelehnt"
 
-#: applications/models.py:138
+#: applications/models.py:143
 msgid "State of the application"
 msgstr "Status der Anfrage"
 
-#: applications/models.py:148
+#: applications/models.py:155
 msgid "RSVP status"
 msgstr "RSVP-Status"
 
-#: applications/models.py:258
+#: applications/models.py:266
 msgid "5 being the most positive, 1 being the most negative."
 msgstr "5 am positivsten, 1 am negativsten."
 
-#: applications/models.py:262
+#: applications/models.py:270
 msgid "Any extra comments?"
 msgstr "Weitere Kommentare?"
 
-#: applications/models.py:279
+#: applications/models.py:287
 msgid "Content of the email"
 msgstr "Inhalt der E-Mail"
 
-#: applications/models.py:280
+#: applications/models.py:288
 msgid "You can use HTML syntax in this message. Preview on the right."
 msgstr "Du kannst HTML Syntax in dieser Nachricht verwenden. Vorschau rechts."
 
-#: applications/models.py:285 templates/applications/communication.html:22
+#: applications/models.py:293 templates/applications/communication.html:22
 msgid "Recipients"
 msgstr "Empfänger"
 
-#: applications/models.py:286
+#: applications/models.py:294
 msgid "Only people assigned to chosen group will receive this email."
 msgstr "Nur Empfänger der ausgewählten Gruppe erhalten diese E-Mail."
 
@@ -935,34 +935,34 @@ msgstr "Co-Organisator"
 msgid "Co-organizers"
 msgstr "Co-Organisatoren"
 
-#: patreonmanager/admin.py:23
+#: patreonmanager/admin.py:30
 msgid "Twitter"
 msgstr "Twitter"
 
-#: patreonmanager/admin.py:31
+#: patreonmanager/admin.py:38
 msgid "Payments"
 msgstr "Zahlungen"
 
-#: patreonmanager/admin.py:35 patreonmanager/admin.py:40
+#: patreonmanager/admin.py:45 patreonmanager/admin.py:51
 #, python-format
 msgid "%d payment"
 msgid_plural "%d payments"
 msgstr[0] "%d Zahlung"
 msgstr[1] "%d Zahlungen"
 
-#: patreonmanager/admin.py:37
+#: patreonmanager/admin.py:48
 msgid "Uncompleted payments"
 msgstr "Unvollständige Zahlungen"
 
-#: patreonmanager/admin.py:60
+#: patreonmanager/admin.py:78
 msgid "Patron"
 msgstr "Schirmherr"
 
-#: patreonmanager/admin.py:67
+#: patreonmanager/admin.py:85
 msgid "Mark selected payments as completed"
 msgstr "Markieren Sie ausgewählte Zahlungen als abgeschlossen"
 
-#: patreonmanager/admin.py:70
+#: patreonmanager/admin.py:88
 #, python-format
 msgid "Marked %d payment as completed"
 msgid_plural "Marked %d payments as completed"
@@ -1054,7 +1054,16 @@ msgid "payments"
 msgstr "Zahlungen"
 
 #: patreonmanager/templates/admin/patreonmanager/patron/change_form.html:9
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "\n"
+#| "                %(counter)s payment\n"
+#| "            "
+#| msgid_plural ""
+#| "\n"
+#| "                %(counter)s payments\n"
+#| "            "
 msgid ""
 "\n"
 "                %(counter)s payment\n"
@@ -1064,6 +1073,9 @@ msgid_plural ""
 "                %(counter)s payments\n"
 "            "
 msgstr[0] ""
+"\n"
+"\n"
+"\n"
 "%(counter)s Zahlung\n"
 "            "
 msgstr[1] "%(counter)s Zahlungen"
@@ -1144,8 +1156,8 @@ msgid ""
 "To see submitted applications, you need to <a href=\"%(add_url)s\">add an "
 "application form</a> first."
 msgstr ""
-"Um eingereichte Bewerbungen zu sehen, musst du zuerst <a "
-"href=\"%(add_url)s\">ein Bewerbungsformular hinzufügen</a>."
+"Um eingereichte Bewerbungen zu sehen, musst du zuerst <a href=\"%(add_url)s"
+"\">ein Bewerbungsformular hinzufügen</a>."
 
 #: templates/admin/base_site.html:5
 msgid "Django Girls admin"
@@ -1604,8 +1616,8 @@ msgstr ""
 #, python-format
 msgid ""
 "If you want to contact the organizers of this event, you can email them at "
-"<a href=\"mailto:%(page_url)s@djangogirls."
-"org\">%(page_url|lower)s@djangogirls.org</a>"
+"<a href=\"mailto:%(page_url)s@djangogirls.org\">"
+"%(page_url|lower)s@djangogirls.org</a>"
 msgstr ""
 "Wenn Sie mit den Organisatoren dieser Veranstaltung Kontakt aufnehmen "
 "möchten, können Sie eine E-Mail an <a href=\"mailto:%(page_url)s@djangogirls."
@@ -1710,8 +1722,8 @@ msgstr "Ausgaben 💸"
 #: templates/core/2015.html:60
 #, fuzzy, python-format
 #| msgid ""
-#| "In total, <span>we spent $6,095.80 USD in 2015</span>. The <a "
-#| "href=\"https://djangogirls.org/pages/awesomness-ambassador/\">Awesomeness "
+#| "In total, <span>we spent $6,095.80 USD in 2015</span>. The <a href="
+#| "\"https://djangogirls.org/pages/awesomness-ambassador/\">Awesomeness "
 #| "Ambassador</a> position encompassed the majority (70%%) of all of our "
 #| "costs. The Awesomeness Ambassador is responsible for running the daily "
 #| "operations of the organization: responding to organizer's requests, "
@@ -1983,11 +1995,11 @@ msgstr ""
 #: templates/core/2015.html:205
 msgid ""
 "The first quarter kept us busy with wonderful people knocking to our doors, "
-"asking us if they can help with translating the tutorial. We chose <a "
-"href=\"https://crowdin.com/project/django-girls-tutorial\">Crowdin</a> as "
-"our translation platform, and began a never-ending process of figuring out "
-"how this translation thing even works. The Polish translation was the first "
-"one to be published that year!"
+"asking us if they can help with translating the tutorial. We chose <a href="
+"\"https://crowdin.com/project/django-girls-tutorial\">Crowdin</a> as our "
+"translation platform, and began a never-ending process of figuring out how "
+"this translation thing even works. The Polish translation was the first one "
+"to be published that year!"
 msgstr ""
 "Im ersten Quartal waren wir mit wunderbaren Menschen beschäftigt, die an "
 "unsere Türen klopften und uns fragten, ob sie bei der Übersetzung des "
@@ -2018,24 +2030,24 @@ msgid ""
 "publishing <a href=\"https://djangogirls.org/story/\">53 stories of amazing "
 "women on our blog</a> -- one for each week of the year. Huge thank you to "
 "Anna Ossowski who led this project for over a year, and to <a href=\"http://"
-"blog.djangogirls.org/post/132398930020/your-django-story-meet-adrienne-"
-"lowe\">Adrienne Lowe</a> who is now in charge of it."
+"blog.djangogirls.org/post/132398930020/your-django-story-meet-adrienne-lowe"
+"\">Adrienne Lowe</a> who is now in charge of it."
 msgstr ""
 "Das ganze Jahr über haben wir auf unserem Blog <a href=\"https://djangogirls."
 "org/story/\">53 Geschichten von tollen Frauen veröffentlicht</a> - eine für "
 "jede Woche des Jahres. Ein großes Dankeschön an Anna Ossowski, die dieses "
 "Projekt über ein Jahr lang geleitet hat, und an <a href=\"http://blog."
-"djangogirls.org/post/132398930020/your-django-story-meet-adrienne-"
-"lowe\">Adrienne Lowe</a>, die jetzt dafür verantwortlich ist."
+"djangogirls.org/post/132398930020/your-django-story-meet-adrienne-lowe"
+"\">Adrienne Lowe</a>, die jetzt dafür verantwortlich ist."
 
 #: templates/core/2015.html:236
 msgid ""
 "We focused on improving our organizer's tools. Thanks to the hard work of "
-"our volunteers, we've seen some incredible contributions to our <a "
-"href=\"http://organize.djangogirls.org/\">Organizer's Manual</a>. We also "
-"built an Applications tool for organizers that finally allows them to "
-"receive and score applications through the Django Girls website, instead of "
-"Google Forms and Spreadsheets. Phew!"
+"our volunteers, we've seen some incredible contributions to our <a href="
+"\"http://organize.djangogirls.org/\">Organizer's Manual</a>. We also built "
+"an Applications tool for organizers that finally allows them to receive and "
+"score applications through the Django Girls website, instead of Google Forms "
+"and Spreadsheets. Phew!"
 msgstr ""
 "Wir haben uns auf die Verbesserung der Werkzeuge für Organisatoren "
 "konzentriert. Dank der harten Arbeit unserer Freiwilligen haben wir einige "
@@ -2068,10 +2080,10 @@ msgstr ""
 
 #: templates/core/2015.html:251
 msgid ""
-"In May, we also made a major update to the Django Girls tutorial, <a "
-"href=\"http://blog.djangogirls.org/post/118716365753/django-girls-now-deploy-"
-"to-python-anywhere\">rewriting the deploy chapter</a> to use Python "
-"Anywhere. Big thank you to Harry Percival for making it possible."
+"In May, we also made a major update to the Django Girls tutorial, <a href="
+"\"http://blog.djangogirls.org/post/118716365753/django-girls-now-deploy-to-"
+"python-anywhere\">rewriting the deploy chapter</a> to use Python Anywhere. "
+"Big thank you to Harry Percival for making it possible."
 msgstr ""
 "Im Mai haben wir auch das Django-Girls-Tutorial auf den neuesten Stand "
 "gebracht und <a href=\"http://blog.djangogirls.org/post/118716365753/django-"
@@ -2092,17 +2104,16 @@ msgstr ""
 
 #: templates/core/2015.html:273
 msgid ""
-"Oh my, summer was one hell of a ride. First, the Birthday Party! <a "
-"href=\"http://blog.djangogirls.org/post/125086409433/django-girls-1st-"
-"birthday-thank-you\">Django Girls' 1st Birthday Party</a> happened at "
-"EuroPython on the 22nd of July. We celebrated with 50 wonderful friends in a "
-"park, shared cupcakes, raised some glasses of sangria, and played a couple "
-"of games."
+"Oh my, summer was one hell of a ride. First, the Birthday Party! <a href="
+"\"http://blog.djangogirls.org/post/125086409433/django-girls-1st-birthday-"
+"thank-you\">Django Girls' 1st Birthday Party</a> happened at EuroPython on "
+"the 22nd of July. We celebrated with 50 wonderful friends in a park, shared "
+"cupcakes, raised some glasses of sangria, and played a couple of games."
 msgstr ""
-"Oh je, der Sommer war ein Höllenritt. Erstens, die Geburtstagsparty! <a "
-"href=\"http://blog.djangogirls.org/post/125086409433/django-girls-1st-"
-"birthday-thank-you\">Django Girls' 1st Birthday Party</a> fand am 22. Juli "
-"im EuroPython statt. Wir feierten mit 50 wunderbaren Freunden in einem Park, "
+"Oh je, der Sommer war ein Höllenritt. Erstens, die Geburtstagsparty! <a href="
+"\"http://blog.djangogirls.org/post/125086409433/django-girls-1st-birthday-"
+"thank-you\">Django Girls' 1st Birthday Party</a> fand am 22. Juli im "
+"EuroPython statt. Wir feierten mit 50 wunderbaren Freunden in einem Park, "
 "teilten Muffins, stießen mit Sangria an und spielten ein paar Spiele."
 
 #: templates/core/2015.html:279
@@ -2127,10 +2138,10 @@ msgstr ""
 #: templates/core/2015.html:287
 msgid ""
 "Growing the Support Team yet again, we <a href=\"http://blog.djangogirls.org/"
-"post/125437235598/yay-lacey-williams-henschel-is-joining-the-"
-"django\">invited Lacey to join us</a>. Right from the start, she did an "
-"amazing job of establishing new processes, improving old ones, and "
-"increasing our transparency efforts."
+"post/125437235598/yay-lacey-williams-henschel-is-joining-the-django"
+"\">invited Lacey to join us</a>. Right from the start, she did an amazing "
+"job of establishing new processes, improving old ones, and increasing our "
+"transparency efforts."
 msgstr ""
 "Um das Support-Team weiter zu vergrößern, haben wir <a href=\"http://blog."
 "djangogirls.org/post/125437235598/yay-lacey-williams-henschel-is-joining-the-"
@@ -2152,8 +2163,8 @@ msgstr ""
 "buchstäblich Hunderte von Stunden damit verbracht, die beste Bewerberin zu "
 "rekrutieren: Lucie Daeye. Das hat sich wirklich gelohnt. Wenn Sie mehr über "
 "den Einstellungsprozess erfahren möchten, <a href=\"http://blog.djangogirls."
-"org/post/129169522198/django-girls-is-hiring-lessons-learned-from-"
-"our\">haben wir ihn ausführlich in unserem Blog beschrieben</a>."
+"org/post/129169522198/django-girls-is-hiring-lessons-learned-from-our"
+"\">haben wir ihn ausführlich in unserem Blog beschrieben</a>."
 
 #: templates/core/2015.html:310
 msgid ""
@@ -2426,29 +2437,28 @@ msgstr ""
 msgid ""
 "To make Django Girls sustainable and allow further growth, <span><b>we need "
 "your help</b></span>. One of our goals for 2016 is to secure the position of "
-"Awesomeness Ambassador for the future and increase the revenue from <a "
-"href=\"https://www.patreon.com/djangogirls\">Patreon</a> to cover the "
-"expenses associated with it. We hope that in the next months, with the help "
-"of the amazing community around Django Girls,we will be able to continue "
-"spreading love for programming around the world. To help us further our "
-"goal, please consider becoming a monthly contributor to <a href=\"https://"
-"www.patreon.com/djangogirls\">our Patreon campaign</a>, or <a href=\"https://"
-"djangogirls.org/contact/\">email us</a> to discuss corporate sponsorship. We "
-"promise you won't regret it!"
+"Awesomeness Ambassador for the future and increase the revenue from <a href="
+"\"https://www.patreon.com/djangogirls\">Patreon</a> to cover the expenses "
+"associated with it. We hope that in the next months, with the help of the "
+"amazing community around Django Girls,we will be able to continue spreading "
+"love for programming around the world. To help us further our goal, please "
+"consider becoming a monthly contributor to <a href=\"https://www.patreon.com/"
+"djangogirls\">our Patreon campaign</a>, or <a href=\"https://djangogirls.org/"
+"contact/\">email us</a> to discuss corporate sponsorship. We promise you "
+"won't regret it!"
 msgstr ""
 "Um Django Girls nachhaltig zu machen und weiteres Wachstum zu ermöglichen, "
 "<span><b>brauchen wir Ihre Hilfe</b></span>. Eines unserer Ziele für 2016 "
 "ist es, die Position des Awesomeness Ambassador für die Zukunft zu sichern "
-"und die Einnahmen aus <a href=\"https://www.patreon.com/"
-"djangogirls\">Patreon</a> zu erhöhen, um die damit verbundenen Kosten zu "
-"decken. Wir hoffen, dass wir in den nächsten Monaten mit Hilfe der "
-"großartigen Community rund um Django Girls weiterhin die Liebe zum "
-"Programmieren auf der ganzen Welt verbreiten können. Um uns dabei zu helfen, "
-"erwägen Sie bitte, einen monatlichen Beitrag zu <a href=\"https://www."
-"patreon.com/djangogirls\">unserer Patreon-Kampagne</a> zu leisten, oder <a "
-"href=\"https://djangogirls.org/contact/\">schicken Sie uns eine E-Mail</a>, "
-"um ein Sponsoring zu besprechen. Wir versprechen, Sie werden es nicht "
-"bereuen!"
+"und die Einnahmen aus <a href=\"https://www.patreon.com/djangogirls"
+"\">Patreon</a> zu erhöhen, um die damit verbundenen Kosten zu decken. Wir "
+"hoffen, dass wir in den nächsten Monaten mit Hilfe der großartigen Community "
+"rund um Django Girls weiterhin die Liebe zum Programmieren auf der ganzen "
+"Welt verbreiten können. Um uns dabei zu helfen, erwägen Sie bitte, einen "
+"monatlichen Beitrag zu <a href=\"https://www.patreon.com/djangogirls"
+"\">unserer Patreon-Kampagne</a> zu leisten, oder <a href=\"https://"
+"djangogirls.org/contact/\">schicken Sie uns eine E-Mail</a>, um ein "
+"Sponsoring zu besprechen. Wir versprechen, Sie werden es nicht bereuen!"
 
 #: templates/core/2015.html:479
 msgid "Thank you for constant support and love we receive from you!"
@@ -2649,12 +2659,12 @@ msgstr ""
 #: templates/core/2016-2017.html:57
 #, fuzzy, python-format
 #| msgid ""
-#| "👩‍💻 <span>21%%</span> of participants in our survey <span>started "
-#| "working in tech</span> after attending Django Girls workshop. <a "
-#| "href=\"#employment-stats\">👉</a>"
+#| "👩‍💻 <span>21%%</span> of participants in our survey <span>started working "
+#| "in tech</span> after attending Django Girls workshop. <a href="
+#| "\"#employment-stats\">👉</a>"
 msgid ""
-"👩‍💻 <span>21%%</span> of participants in our survey <span>started working "
-"in tech</span> after attending Django Girls workshop. <a href=\"#employment-"
+"👩‍💻 <span>21%%</span> of participants in our survey <span>started working in "
+"tech</span> after attending Django Girls workshop. <a href=\"#employment-"
 "stats\">👉</a>"
 msgstr ""
 "👩‍💻 <span>21%</span> der Teilnehmerinnen an unserer Umfrage <span>begannen "
@@ -2666,19 +2676,19 @@ msgid ""
 "💯 In the last 2 years we improved our tools to support the growth of the "
 "organisation, maintended our free online resources (our tutorial is now in "
 "<span>14 languages!</span>), started Django Girls Store as a fundraising "
-"effort, shipped <span>146 organizer kits</span> and more.  <a "
-"href=\"#tutorial\">👉</a>"
+"effort, shipped <span>146 organizer kits</span> and more.  <a href="
+"\"#tutorial\">👉</a>"
 msgstr ""
-"💯 In den letzten 2 Jahren haben wir unsere Tools verbessert, um das "
-"Wachstum der Organisation zu unterstützen, unsere kostenlosen Online-"
-"Ressourcen erweitert (unser Tutorial gibt es jetzt in <span>14 Sprachen!</"
-"span>), den Django Girls Store als Fundraising-Maßnahme gestartet, <span>146 "
-"Organizer-Kits</span> verschickt und mehr.  <a href=\"#tutorial\">👉</a>"
+"💯 In den letzten 2 Jahren haben wir unsere Tools verbessert, um das Wachstum "
+"der Organisation zu unterstützen, unsere kostenlosen Online-Ressourcen "
+"erweitert (unser Tutorial gibt es jetzt in <span>14 Sprachen!</span>), den "
+"Django Girls Store als Fundraising-Maßnahme gestartet, <span>146 Organizer-"
+"Kits</span> verschickt und mehr.  <a href=\"#tutorial\">👉</a>"
 
 #: templates/core/2016-2017.html:67
 msgid ""
-"📈🎉 In July 2017, on our 3rd birthday, we also celebrated our "
-"<span>10,000th workshop attendee</span> <a href=\"#growth\">👉</a>"
+"📈🎉 In July 2017, on our 3rd birthday, we also celebrated our <span>10,000th "
+"workshop attendee</span> <a href=\"#growth\">👉</a>"
 msgstr ""
 "📈🎉 Im Juli 2017, an unserem 3. Geburtstag, feierten wir auch unseren "
 "<span>10.000sten Workshop-Teilnehmer</span> <a href=\"#wachstums\">👉</a>"
@@ -2687,16 +2697,16 @@ msgstr ""
 #, fuzzy, python-format
 #| msgid ""
 #| "🎓 We learned that <span>79%%</span> of Django Girls alumnis are "
-#| "<span>still learning programming</span> after the workshop. <a "
-#| "href=\"#learning-stats\">👉</a>"
+#| "<span>still learning programming</span> after the workshop. <a href="
+#| "\"#learning-stats\">👉</a>"
 msgid ""
 "🎓 We learned that <span>79%%</span> of Django Girls alumnis are <span>still "
-"learning programming</span> after the workshop. <a href=\"#learning-stats\">"
-"👉</a>"
+"learning programming</span> after the workshop. <a href=\"#learning-stats\">👉"
+"</a>"
 msgstr ""
 "🎓 Wir haben erfahren, dass <span>79%</span> der Django Girls Absolventinnen "
-"nach dem Workshop <span>immer noch programmieren lernen</span>. <a "
-"href=\"#learning-stats\">👉</a>"
+"nach dem Workshop <span>immer noch programmieren lernen</span>. <a href="
+"\"#learning-stats\">👉</a>"
 
 #: templates/core/2016-2017.html:77
 msgid ""
@@ -3444,10 +3454,10 @@ msgid ""
 "RegisterOfCharities/CharityFramework.aspx?"
 "RegisteredCharityNumber=1163260&SubsidiaryNumber=0\">Registered Charity</a> "
 "and is volunteer run. If you're an individual or a company and want to "
-"support us, you can make a <a href=\"https://www.patreon.com/"
-"djangogirls\">monthly donation</a>. You can send one-time donations to our "
-"<a href=\"%(donation_url)s\">PayPal account</a> or <a "
-"href=\"%(donation_url)s\">donate via credit card</a>."
+"support us, you can make a <a href=\"https://www.patreon.com/djangogirls"
+"\">monthly donation</a>. You can send one-time donations to our <a href="
+"\"%(donation_url)s\">PayPal account</a> or <a href=\"%(donation_url)s"
+"\">donate via credit card</a>."
 msgstr ""
 "Django Girls ist eine <a href=\"http://apps.charitycommission.gov.uk/"
 "Showcharity/RegisterOfCharities/CharityFramework.aspx?"
@@ -3455,18 +3465,18 @@ msgstr ""
 "Wohltätigkeitsorganisation</a> und wird von Freiwilligen geleitet. Wenn Sie "
 "uns als Einzelperson oder Unternehmen unterstützen möchten, können Sie eine "
 "<a href=\"https://www.patreon.com/djangogirls\">monatliche Spende</a> "
-"leisten. Sie können einmalige Spenden an unser <a "
-"href=\"%(donation_url)s\">PayPal-Konto</a> senden oder <a "
-"href=\"%(donation_url)s\">mit Kreditkarte spenden</a>."
+"leisten. Sie können einmalige Spenden an unser <a href=\"%(donation_url)s"
+"\">PayPal-Konto</a> senden oder <a href=\"%(donation_url)s\">mit Kreditkarte "
+"spenden</a>."
 
 #: templates/core/contribute.html:39
 msgid ""
 "If you want to help an <a href=\"http://djangogirls.org/events\">event</a> "
 "in particular, you can contact the local organization team to sponsor them."
 msgstr ""
-"Wenn Sie eine bestimmte <a href=\"http://djangogirls.org/"
-"events\">Veranstaltung</a> unterstützen möchten, können Sie sich an das "
-"örtliche Organisationsteam wenden, um sie zu sponsern."
+"Wenn Sie eine bestimmte <a href=\"http://djangogirls.org/events"
+"\">Veranstaltung</a> unterstützen möchten, können Sie sich an das örtliche "
+"Organisationsteam wenden, um sie zu sponsern."
 
 #: templates/core/contribute.html:46
 msgid "Organize!"
@@ -3515,8 +3525,8 @@ msgid ""
 "\">tutorial</a>."
 msgstr ""
 "Sie helfen einer Gruppe von 3 Personen bei der Installation dessen, was sie "
-"für die Veranstaltung benötigen, und führen sie durch unser <a "
-"href=\"https://tutorial.djangogirls.org/\">Tutorial</a>."
+"für die Veranstaltung benötigen, und führen sie durch unser <a href="
+"\"https://tutorial.djangogirls.org/\">Tutorial</a>."
 
 #: templates/core/contribute.html:92
 msgid ""
@@ -3545,11 +3555,11 @@ msgstr ""
 
 #: templates/core/contribute.html:113
 msgid ""
-"We are waiting for your <a href=\"https://github.com/DjangoGirls/"
-"djangogirls\">pull requests!</a>"
+"We are waiting for your <a href=\"https://github.com/DjangoGirls/djangogirls"
+"\">pull requests!</a>"
 msgstr ""
-"Wir warten auf Ihre <a href=\"https://github.com/DjangoGirls/"
-"djangogirls\">Abrufanfragen!</a>"
+"Wir warten auf Ihre <a href=\"https://github.com/DjangoGirls/djangogirls"
+"\">Abrufanfragen!</a>"
 
 #: templates/core/contribute.html:123
 msgid "Fix the tutorial!"
@@ -3586,8 +3596,8 @@ msgstr "Übersetzen Sie die Anleitung!"
 #: templates/core/contribute.html:143
 msgid "A computer screen saying hello and golden balloons saying yay!."
 msgstr ""
-"Ein Computerbildschirm, der \"Hallo\" sagt, und goldene Luftballons, die "
-"\"Ja\" sagen."
+"Ein Computerbildschirm, der \"Hallo\" sagt, und goldene Luftballons, die \"Ja"
+"\" sagen."
 
 #: templates/core/contribute.html:148
 msgid ""
@@ -3604,13 +3614,13 @@ msgstr ""
 #: templates/core/contribute.html:155
 msgid ""
 "If you want to join an existing <a href=\"https://crowdin.com/project/django-"
-"girls-tutorial\">translation team</a> or launch a new translation, <a "
-"href=\"mailto:translations@djangogirls.org\">contact us</a>."
+"girls-tutorial\">translation team</a> or launch a new translation, <a href="
+"\"mailto:translations@djangogirls.org\">contact us</a>."
 msgstr ""
 "Wenn Sie sich einem bestehenden <a href=\"https://crowdin.com/project/django-"
 "girls-tutorial\">Übersetzungsteam</a> anschließen oder eine neue Übersetzung "
-"in Auftrag geben möchten, <a href=\"mailto:translations@djangogirls."
-"org\">kontaktieren Sie uns</a>."
+"in Auftrag geben möchten, <a href=\"mailto:translations@djangogirls.org"
+"\">kontaktieren Sie uns</a>."
 
 #: templates/core/contribute.html:166
 msgid "Help on Gitter!"
@@ -3706,9 +3716,9 @@ msgid ""
 "in the admin</a> and click on 'Website is ready'."
 msgstr ""
 "Hallo zusammen! Du kannst diese Seite sehen, weil du als Administrator "
-"eingeloggt bist. Wenn Sie sie veröffentlichen möchten, gehen Sie zu <a "
-"href=\"%(event_url)s\">Ihrem Website-Bereich in der Verwaltung</a> und "
-"klicken Sie auf \"Website ist bereit\"."
+"eingeloggt bist. Wenn Sie sie veröffentlichen möchten, gehen Sie zu <a href="
+"\"%(event_url)s\">Ihrem Website-Bereich in der Verwaltung</a> und klicken "
+"Sie auf \"Website ist bereit\"."
 
 #: templates/core/event.html:48
 #, python-format
@@ -3725,11 +3735,11 @@ msgid "Contact organizers: <a href=\"mailto:%(email)s\">%(email)s</a>"
 msgstr ""
 "Kontakt zu den Veranstaltern: <a href=\"mailto:%(email)s\">%(email)s</a>"
 
-#: templates/core/events.html:10 templates/core/index.html:91
+#: templates/core/events.html:10 templates/core/index.html:109
 msgid "Upcoming events"
 msgstr "Anstehende Veranstaltungen"
 
-#: templates/core/events.html:12 templates/core/index.html:93
+#: templates/core/events.html:12 templates/core/index.html:111
 msgid "MAP"
 msgstr "KARTE"
 
@@ -3753,8 +3763,8 @@ msgstr "FAQ: Häufig gestellte Fragen"
 #, python-format
 msgid ""
 "Django Girls events have been happening all over the world for a while now, "
-"and we get some repeat questions. If you need more help: <a "
-"href=\"%(contact_url)s\">contact us</a>!"
+"and we get some repeat questions. If you need more help: <a href="
+"\"%(contact_url)s\">contact us</a>!"
 msgstr ""
 "Seit einiger Zeit finden überall auf der Welt Django-Girls-Veranstaltungen "
 "statt, und wir erhalten immer wieder Anfragen. Wenn du mehr Hilfe brauchst: "
@@ -3902,13 +3912,13 @@ msgstr "Wir sind trans-inklusiv und begrüßen Bewerbungen von allen Frauen."
 msgid ""
 "You can add this to your FAQ, or to your event description on your event "
 "website. If you'd like to learn more about trans people, you might want to "
-"take a look at <a href=\"http://www.thegenderbook.com/\" "
-"target=\"_blank\">this illustrated book about gender</a>, <a href=\"http://"
-"www.roostertailscomic.com/comic/queer-101-third-edition/\" "
-"target=\"_blank\">this comic</a>, or any of the many other introductions to "
-"trans issues on the internet. Thanks to the <a href=\"http://kit.pyladies."
-"com/en/latest/faqs.html\" target=\"_blank\">PyLadies FAQ</a> for pointing us "
-"to these excellent resources."
+"take a look at <a href=\"http://www.thegenderbook.com/\" target=\"_blank"
+"\">this illustrated book about gender</a>, <a href=\"http://www."
+"roostertailscomic.com/comic/queer-101-third-edition/\" target=\"_blank"
+"\">this comic</a>, or any of the many other introductions to trans issues on "
+"the internet. Thanks to the <a href=\"http://kit.pyladies.com/en/latest/faqs."
+"html\" target=\"_blank\">PyLadies FAQ</a> for pointing us to these excellent "
+"resources."
 msgstr ""
 "Sie können dies in Ihre FAQ oder in Ihre Veranstaltungsbeschreibung auf "
 "Ihrer Veranstaltungswebsite aufnehmen. Wenn Sie mehr über transsexuelle "
@@ -3916,10 +3926,9 @@ msgstr ""
 "thegenderbook.com/\" target=\"_blank\">diesen Bildband über Gender</a>, <a "
 "href=\"http://www.roostertailscomic.com/comic/queer-101-third-edition/\" "
 "target=\"_blank\">diesen Comic</a> oder eine der vielen anderen Einführungen "
-"in transsexuelle Themen im Internet werfen. Vielen Dank an die <a "
-"href=\"http://kit.pyladies.com/en/latest/faqs.html\" "
-"target=\"_blank\">PyLadies FAQ</a> für den Hinweis auf diese hervorragenden "
-"Ressourcen."
+"in transsexuelle Themen im Internet werfen. Vielen Dank an die <a href="
+"\"http://kit.pyladies.com/en/latest/faqs.html\" target=\"_blank\">PyLadies "
+"FAQ</a> für den Hinweis auf diese hervorragenden Ressourcen."
 
 #: templates/core/faq.html:142
 msgid ""
@@ -3967,10 +3976,23 @@ msgstr ""
 "Technik."
 
 #: templates/core/index.html:29
+msgid "We are celebrating 10 years with Django Girls! 🎉"
+msgstr ""
+
+#: templates/core/index.html:31
+msgid ""
+"Have you been an attendee, coach, or organizer with Django Girls? We want to "
+"hear from YOU! Thanks to PyCharm, we put together a short survey to collect "
+"your thoughts and experiences. Please take a moment to <a href=\"https://"
+"surveys.jetbrains.com/s3/w-django-girls-survey-2024\">fill in our survey "
+"here</a>. Thank you 🎈❤️!"
+msgstr ""
+
+#: templates/core/index.html:47
 msgid "What is Django Girls?"
 msgstr "Was ist Django Girls?"
 
-#: templates/core/index.html:32
+#: templates/core/index.html:50
 #, python-format
 msgid ""
 "Django Girls is a <a href=\"%(foundation_url)s\">non-profit organization</a> "
@@ -3989,7 +4011,7 @@ msgstr ""
 "machen Technologie zugänglicher, indem wir Ressourcen schaffen, die mit "
 "Einfühlungsvermögen entwickelt wurden."
 
-#: templates/core/index.html:40
+#: templates/core/index.html:58
 msgid ""
 "During each of our events, 30-60 women build their first web application "
 "using HTML, CSS, Python and Django."
@@ -3997,30 +4019,28 @@ msgstr ""
 "Bei jeder unserer Veranstaltungen erstellen 30-60 Frauen ihre erste "
 "Webanwendung mit HTML, CSS, Python und Django."
 
-#: templates/core/index.html:53
+#: templates/core/index.html:71
 msgid "Django Girls impact"
 msgstr "Django Girls Auswirkungen"
 
-#: templates/core/index.html:56
+#: templates/core/index.html:74
 #, python-format
 msgid ""
-"Since 2014, an army of <span class=\"highlighted-"
-"number\">%(organizers_count)s volunteers</span> in the Django Girls "
-"community organized <span class=\"highlighted-number\">%(all_events_count)s "
-"events.</span> We've been to <span class=\"highlighted-"
-"number\">%(cities_count)s cities</span> in <span class=\"highlighted-"
-"number\">%(country_count)s countries</span> (<a "
-"href=\"%(event_map_url)s\">see them all on a map</a>)."
-msgstr ""
-"Seit 2014 organisiert eine Armee von <span class=\"highlighted-"
-"number\">%(organizers_count)s Freiwilligen</span> in der Django Girls "
-"Community <span class=\"highlighted-number\">%(all_events_count)s Events.</"
-"span> Wir waren in <span class=\"highlighted-number\">%(cities_count)s "
+"Since 2014, an army of <span class=\"highlighted-number\">"
+"%(organizers_count)s volunteers</span> in the Django Girls community "
+"organized <span class=\"highlighted-number\">%(all_events_count)s events.</"
+"span> We've been to <span class=\"highlighted-number\">%(cities_count)s "
 "cities</span> in <span class=\"highlighted-number\">%(country_count)s "
-"countries</span> (<a href=\"%(event_map_url)s\">siehe sie alle auf einer "
-"Karte</a>)."
+"countries</span> (<a href=\"%(event_map_url)s\">see them all on a map</a>)."
+msgstr ""
+"Seit 2014 organisiert eine Armee von <span class=\"highlighted-number\">"
+"%(organizers_count)s Freiwilligen</span> in der Django Girls Community <span "
+"class=\"highlighted-number\">%(all_events_count)s Events.</span> Wir waren "
+"in <span class=\"highlighted-number\">%(cities_count)s cities</span> in "
+"<span class=\"highlighted-number\">%(country_count)s countries</span> (<a "
+"href=\"%(event_map_url)s\">siehe sie alle auf einer Karte</a>)."
 
-#: templates/core/index.html:64
+#: templates/core/index.html:82
 #, python-format
 msgid ""
 "A total of <span class=\"highlighted-number\">%(attendees_sum)s incredible "
@@ -4030,22 +4050,22 @@ msgstr ""
 "unglaubliche Frauen</span> Veranstaltungen, die von Mitgliedern unserer "
 "Gemeinschaft organisiert wurden."
 
-#: templates/core/index.html:69
+#: templates/core/index.html:87
 msgid "Read our Annual Report to learn about the impact we make"
 msgstr "Lesen Sie unseren Jahresbericht, um zu erfahren, was wir bewirken"
 
-#: templates/core/index.html:73 templates/includes/_no_event.html:25
+#: templates/core/index.html:91 templates/includes/_no_event.html:25
 msgid "Bring Django Girls to your city!"
 msgstr "Bring Django Girls in deine Stadt!"
 
-#: templates/core/index.html:74
+#: templates/core/index.html:92
 msgid ""
 "Is there no Django Girls event in your city? You can help make it happen!"
 msgstr ""
 "Gibt es in Ihrer Stadt keine Django Girls Veranstaltung? Du kannst helfen, "
 "es zu ermöglichen!"
 
-#: templates/core/index.html:76
+#: templates/core/index.html:94
 #, python-format
 msgid ""
 "We open sourced the <a href=\"http://organize.djangogirls.org/\">Organizer "
@@ -4060,20 +4080,20 @@ msgstr ""
 "Organisatorin melden, werden Sie Teil einer lebendigen und unterstützenden "
 "Gemeinschaft von %(organizers_count)s Organisatoren auf der ganzen Welt!"
 
-#: templates/core/index.html:82 templates/organize/index.html:89
+#: templates/core/index.html:100 templates/organize/index.html:89
 msgid "Apply to organize a workshop"
 msgstr "Anmeldung zur Organisation eines Workshops"
 
-#: templates/core/index.html:108
+#: templates/core/index.html:126
 #, python-format
 msgid "Show all %(future_events_count)s upcoming events"
 msgstr "Alle %(future_events_count)s anstehenden Ereignisse anzeigen"
 
-#: templates/core/index.html:116
+#: templates/core/index.html:134
 msgid "Badass Django Ladies"
 msgstr "Knallharte Django-Damen"
 
-#: templates/core/index.html:117
+#: templates/core/index.html:135
 msgid ""
 "Each week we try to introduce one badass lady who uses Python or Django and "
 "highlight her work:"
@@ -4081,23 +4101,23 @@ msgstr ""
 "Jede Woche versuchen wir, eine Frau vorzustellen, die Python oder Django "
 "benutzt und ihre Arbeit hervorzuheben:"
 
-#: templates/core/index.html:125
+#: templates/core/index.html:143
 msgid "Read all Django Stories"
 msgstr "Alle Django-Geschichten lesen"
 
-#: templates/core/index.html:128
+#: templates/core/index.html:146
 msgid "Latest from our blog"
 msgstr "Aktuelles aus unserem Blog"
 
-#: templates/core/index.html:131
+#: templates/core/index.html:149
 msgid "Read all"
 msgstr "Alles lesen"
 
-#: templates/core/index.html:140
+#: templates/core/index.html:158
 msgid "Support our work"
 msgstr "Unterstützen Sie unsere Arbeit"
 
-#: templates/core/index.html:141
+#: templates/core/index.html:159
 msgid ""
 "Django Girls is a volunteer run organization, and we depend on your support "
 "to make it happen."
@@ -4105,38 +4125,38 @@ msgstr ""
 "Django Girls ist eine ehrenamtlich geführte Organisation, und wir sind auf "
 "Ihre Unterstützung angewiesen, um das Projekt durchzuführen."
 
-#: templates/core/index.html:143
+#: templates/core/index.html:161
 #, fuzzy
 #| msgid ""
-#| "<span class=\"highlighted-number\">$1,661</span> of <span "
-#| "class=\"highlighted-number\">$2,500</span> monthly goal pledged"
+#| "<span class=\"highlighted-number\">$1,661</span> of <span class="
+#| "\"highlighted-number\">$2,500</span> monthly goal pledged"
 msgid ""
-"<span class=\"highlighted-number\">$1,060</span> of <span "
-"class=\"highlighted-number\">$2,500</span> monthly goal pledged"
+"<span class=\"highlighted-number\">$1,060</span> of <span class="
+"\"highlighted-number\">$2,500</span> monthly goal pledged"
 msgstr ""
-"<span class=\"highlighted-number\">$1.661</span> des <span "
-"class=\"highlighted-number\">$2.500</span> Monatsziels zugesagt"
+"<span class=\"highlighted-number\">$1.661</span> des <span class="
+"\"highlighted-number\">$2.500</span> Monatsziels zugesagt"
 
-#: templates/core/index.html:150 templates/donations/donate.html:99
+#: templates/core/index.html:168 templates/donations/donate.html:99
 msgid "Make a recurring donation on Patreon"
 msgstr "Wiederkehrende Spenden auf Patreon tätigen"
 
-#: templates/core/index.html:154
+#: templates/core/index.html:172
 #, python-format
 msgid ""
 "You can also send us a one <a href=\"%(donations_url)s\">time donation</a>. "
-"If you would like to discuss a bigger partnership, <a "
-"href=\"%(contact_url)s\">please get in touch</a>."
+"If you would like to discuss a bigger partnership, <a href=\"%(contact_url)s"
+"\">please get in touch</a>."
 msgstr ""
 "Sie können uns auch eine einmalige <a href=\"%(donations_url)s\">Spende</a> "
 "zukommen lassen. Wenn Sie über eine größere Partnerschaft sprechen möchten, "
 "<a href=\"%(contact_url)s\">bitte nehmen Sie Kontakt auf</a>."
 
-#: templates/core/index.html:162
+#: templates/core/index.html:180
 msgid "Stay up to date!"
 msgstr "Bleiben Sie auf dem Laufenden!"
 
-#: templates/core/index.html:164
+#: templates/core/index.html:182
 msgid ""
 "Subscribe to Django Girls Dispatch to receive the latest and greatest from "
 "our community every two weeks, straight to your inbox!"
@@ -4144,39 +4164,39 @@ msgstr ""
 "Abonnieren Sie den Django Girls Dispatch, um alle zwei Wochen das Neueste "
 "und Beste aus unserer Community direkt in Ihren Posteingang zu bekommen!"
 
-#: templates/core/index.html:171 templates/core/newsletter.html:35
+#: templates/core/index.html:189 templates/core/newsletter.html:35
 msgid "email address"
 msgstr "E-Mail Adresse"
 
-#: templates/core/index.html:174 templates/core/newsletter.html:22
+#: templates/core/index.html:192 templates/core/newsletter.html:22
 #: templates/core/newsletter.html:38 templates/includes/_no_event.html:18
 msgid "Subscribe"
 msgstr "Abonnieren"
 
-#: templates/core/index.html:180
+#: templates/core/index.html:198
 msgid "See the Django Girls Dispatch archives"
 msgstr "Siehe das Archiv von Django Girls Dispatch"
 
-#: templates/core/index.html:183
+#: templates/core/index.html:201
 msgid "Check out our podcast!"
 msgstr "Hören Sie sich unseren Podcast an!"
 
-#: templates/core/index.html:185
+#: templates/core/index.html:203
 msgid ""
 "We have a new <a href=\"https://anchor.fm/djangogirls\">podcast</a> that is "
 "being hosted by trustees <a href=\"http://blog.djangogirls.org/"
 "post/138923168468\"> Aisha</a> and <a href=\"http://blog.djangogirls.org/"
 "post/172001842084\">Leona</a> where they talk with many awesome people from "
 "our community. Check out the <a href=\"https://anchor.fm/s/7aa83714/podcast/"
-"rss\">RSS Feed</a> for the <a href=\"https://anchor.fm/"
-"djangogirls\">podcast</a> which is available on multiple platforms such as "
-"<a href=\"https://podcasts.apple.com/us/podcast/django-girls-podcast/"
+"rss\">RSS Feed</a> for the <a href=\"https://anchor.fm/djangogirls"
+"\">podcast</a> which is available on multiple platforms such as <a href="
+"\"https://podcasts.apple.com/us/podcast/django-girls-podcast/"
 "id1602881437\">Apple Pod</a>, <a href=\"https://podcasts.google.com/feed/"
 "aHR0cHM6Ly9hbmNob3IuZm0vcy83YWE4MzcxNC9wb2RjYXN0L3Jzcw?ep=14\">Google Pod</"
 "a>, <a href=\"https://music.amazon.ca/podcasts/afe571fc-"
 "bc45-4fcb-871f-3b5a4bb4560f/django-girls-podcast?"
-"ref=dm_sh_pXP60O3XBTy3Vb5o5JmSB1coQ\">Amazon Music</a>, and <a "
-"href=\"https://open.spotify.com/show/5sHA8wy4ttUtPgwXHL2lf5\">Spotify</a> ."
+"ref=dm_sh_pXP60O3XBTy3Vb5o5JmSB1coQ\">Amazon Music</a>, and <a href="
+"\"https://open.spotify.com/show/5sHA8wy4ttUtPgwXHL2lf5\">Spotify</a> ."
 msgstr ""
 "Wir haben einen neuen <a href=\"https://anchor.fm/djangogirls\">Podcast</a>, "
 "der von den Treuhändern <a href=\"http://blog.djangogirls.org/"
@@ -4193,29 +4213,29 @@ msgstr ""
 "ref=dm_sh_pXP60O3XBTy3Vb5o5JmSB1coQ\">Amazon Music</a> und <a href=\"https://"
 "open.spotify.com/show/5sHA8wy4ttUtPgwXHL2lf5\">Spotify</a> verfügbar ist."
 
-#: templates/core/index.html:203
+#: templates/core/index.html:221
 msgid "They already sponsor us! 💕"
 msgstr "Sie sponsern uns bereits! 💕"
 
-#: templates/core/index.html:205
+#: templates/core/index.html:223
 #, python-format
 msgid ""
 "These incredible companies made a pledge to diversity and are actively "
 "helping us to change the ratio in the tech industry. <br /> If you wish to "
-"join them, support us on <a href=\"https://www.patreon.com/"
-"djangogirls\">Patreon</a> or <a href=\"%(contact_url)s\">drop us a line</a>."
+"join them, support us on <a href=\"https://www.patreon.com/djangogirls"
+"\">Patreon</a> or <a href=\"%(contact_url)s\">drop us a line</a>."
 msgstr ""
 "Diese unglaublichen Unternehmen haben sich zur Vielfalt verpflichtet und "
 "helfen uns aktiv dabei, das Verhältnis in der Tech-Branche zu ändern. <br /> "
-"Wenn Sie sich ihnen anschließen möchten, unterstützen Sie uns auf <a "
-"href=\"https://www.patreon.com/djangogirls\">Patreon</a> oder <a "
-"href=\"%(contact_url)s\">drop us a line</a>."
+"Wenn Sie sich ihnen anschließen möchten, unterstützen Sie uns auf <a href="
+"\"https://www.patreon.com/djangogirls\">Patreon</a> oder <a href="
+"\"%(contact_url)s\">drop us a line</a>."
 
-#: templates/core/index.html:220
+#: templates/core/index.html:238
 msgid "They already support us! 💕"
 msgstr "Sie unterstützen uns bereits! 💕"
 
-#: templates/core/index.html:222
+#: templates/core/index.html:240
 #, python-format
 msgid ""
 "These incredible companies are actively helping us to change the ratio in "
@@ -4224,8 +4244,8 @@ msgid ""
 msgstr ""
 "Diese unglaublichen Unternehmen helfen uns aktiv dabei, das Verhältnis in "
 "der Technologiebranche zu ändern, indem sie uns auf andere Weise "
-"unterstützen. <br /> Wenn Sie sich ihnen anschließen möchten, <a "
-"href=\"%(contact_url)s\">drop us a line</a>."
+"unterstützen. <br /> Wenn Sie sich ihnen anschließen möchten, <a href="
+"\"%(contact_url)s\">drop us a line</a>."
 
 #: templates/core/newsletter.html:4
 msgid "Django Girls Dispatch - Newsletter"
@@ -5093,8 +5113,8 @@ msgstr ""
 #, python-format
 msgid ""
 "If you wish to make a donation for the use of any of our services, go to our "
-"<a href=\"https://www.patreon.com/djangogirls\">Patreon page</a> or <a "
-"href=\"%(donations_url)s\">our donate page</a>."
+"<a href=\"https://www.patreon.com/djangogirls\">Patreon page</a> or <a href="
+"\"%(donations_url)s\">our donate page</a>."
 msgstr ""
 "Wenn Sie für die Nutzung einer unserer Dienstleistungen spenden möchten, "
 "besuchen Sie unsere <a href=\"https://www.patreon.com/djangogirls\">Patreon-"
@@ -5199,8 +5219,8 @@ msgid ""
 "you must not use our System for unauthorised mass communication such as "
 "“spam” or “junk mail”."
 msgstr ""
-"Sie dürfen unser System nicht für unerlaubte Massenkommunikation wie "
-"\"Spam\" oder \"Junk-Mail\" verwenden."
+"Sie dürfen unser System nicht für unerlaubte Massenkommunikation wie \"Spam"
+"\" oder \"Junk-Mail\" verwenden."
 
 #: templates/core/terms_conditions.html:102
 msgid ""
@@ -5242,9 +5262,8 @@ msgid ""
 "We and you both agree that <a href=\"%(cookies_url)s\">our Privacy and "
 "Cookie Policy</a> forms part of these T&Cs."
 msgstr ""
-"Wir und Sie sind damit einverstanden, dass <a "
-"href=\"%(cookies_url)s\">unsere Datenschutz- und Cookie-Richtlinie</a> Teil "
-"dieser AGB ist."
+"Wir und Sie sind damit einverstanden, dass <a href=\"%(cookies_url)s"
+"\">unsere Datenschutz- und Cookie-Richtlinie</a> Teil dieser AGB ist."
 
 #: templates/core/terms_conditions.html:123
 msgid "Disclaimers"
@@ -5332,12 +5351,12 @@ msgstr ""
 "Wenn Sie einen Fehler, ein Problem oder einen Bug bei der Nutzung einer der "
 "von uns auf der Website angebotenen Dienstleistungen oder Einrichtungen "
 "feststellen, erklären Sie sich damit einverstanden, uns entweder zu "
-"benachrichtigen, indem Sie einen Pull-Request an die folgende <a "
-"href=\"https://github.com/DjangoGirls/djangogirls/\">Adresse</a> senden, "
-"oder uns über die Einrichtungen der Website eine Frage zu stellen. Obwohl "
-"wir uns stets bemühen werden, die in diesem Absatz genannten Probleme zu "
-"lösen, übernehmen wir keine Garantie dafür, dass wir in der Lage sein "
-"werden, ein bestimmtes Ergebnis zu erzielen."
+"benachrichtigen, indem Sie einen Pull-Request an die folgende <a href="
+"\"https://github.com/DjangoGirls/djangogirls/\">Adresse</a> senden, oder uns "
+"über die Einrichtungen der Website eine Frage zu stellen. Obwohl wir uns "
+"stets bemühen werden, die in diesem Absatz genannten Probleme zu lösen, "
+"übernehmen wir keine Garantie dafür, dass wir in der Lage sein werden, ein "
+"bestimmtes Ergebnis zu erzielen."
 
 #: templates/core/terms_conditions.html:158 templates/global/menu.html:20
 msgid "Events"
@@ -5931,11 +5950,11 @@ msgstr "Sei ein Mentor!"
 #: templates/default/coach.html:8
 #, python-format
 msgid ""
-"We would be delighted if you would like to join us as a mentor! <a "
-"href=\"%(contact_url)s\">Contact us</a> if you're interested ❤️"
+"We would be delighted if you would like to join us as a mentor! <a href="
+"\"%(contact_url)s\">Contact us</a> if you're interested ❤️"
 msgstr ""
-"Wir würden uns freuen, wenn Sie uns als Mentor unterstützen möchten! <a "
-"href=\"%(contact_url)s\">Kontaktieren Sie uns</a> bei Interesse ❤️"
+"Wir würden uns freuen, wenn Sie uns als Mentor unterstützen möchten! <a href="
+"\"%(contact_url)s\">Kontaktieren Sie uns</a> bei Interesse ❤️"
 
 #: templates/default/coach.html:16 templates/default/values.html:5
 msgid "Django Girls"
@@ -5957,17 +5976,17 @@ msgid ""
 "To see the source for the program find us on Github: <a href=\"https://"
 "github.com/DjangoGirls/\">github.com/DjangoGirls</a>."
 msgstr ""
-"Um den Quellcode des Programms zu sehen, finden Sie uns auf Github: <a "
-"href=\"https://github.com/DjangoGirls/\">github.com/DjangoGirls</a>."
+"Um den Quellcode des Programms zu sehen, finden Sie uns auf Github: <a href="
+"\"https://github.com/DjangoGirls/\">github.com/DjangoGirls</a>."
 
 #: templates/default/coach.html:30
 #, python-format
 msgid ""
-"If you want to bring Django Girls to your city, <a "
-"href=\"%(contact_url)s\">drop us a line</a>"
+"If you want to bring Django Girls to your city, <a href=\"%(contact_url)s"
+"\">drop us a line</a>"
 msgstr ""
-"Wenn Sie Django Girls in Ihre Stadt bringen wollen, <a "
-"href=\"%(contact_url)s\">schreiben Sie uns eine Nachricht</a>"
+"Wenn Sie Django Girls in Ihre Stadt bringen wollen, <a href=\"%(contact_url)s"
+"\">schreiben Sie uns eine Nachricht</a>"
 
 #: templates/default/faq.html:6
 msgid "Do I need to know anything about websites or programming?"
@@ -6058,16 +6077,16 @@ msgstr ""
 #: templates/default/footer.html:39
 msgid ""
 "♥ Django Girls Europe is organized by <a href=\"http://twitter.com/"
-"olasitarska\">Ola Sitarska</a> and <a href=\"http://twitter.com/"
-"asednecka\">Ola Sendecka</a> with the support from <a href=\"http://"
-"europython.eu/\">EuroPython 2014</a>.<br> Django Girls Europe is a part of "
-"<a href=\"/\">Django Girls</a>."
+"olasitarska\">Ola Sitarska</a> and <a href=\"http://twitter.com/asednecka"
+"\">Ola Sendecka</a> with the support from <a href=\"http://europython.eu/"
+"\">EuroPython 2014</a>.<br> Django Girls Europe is a part of <a href=\"/"
+"\">Django Girls</a>."
 msgstr ""
 "♥ Django Girls Europe wird organisiert von <a href=\"http://twitter.com/"
-"olasitarska\">Ola Sitarska</a> und <a href=\"http://twitter.com/"
-"asednecka\">Ola Sendecka</a> mit der Unterstützung von <a href=\"http://"
-"europython.eu/\">EuroPython 2014</a>.<br> Django Girls Europe ist ein Teil "
-"von <a href=\"/\">Django Girls</a>."
+"olasitarska\">Ola Sitarska</a> und <a href=\"http://twitter.com/asednecka"
+"\">Ola Sendecka</a> mit der Unterstützung von <a href=\"http://europython.eu/"
+"\">EuroPython 2014</a>.<br> Django Girls Europe ist ein Teil von <a href=\"/"
+"\">Django Girls</a>."
 
 #: templates/default/partners.html:3
 msgid "Sponsors"
@@ -6078,8 +6097,8 @@ msgstr "Förderer"
 msgid ""
 "We couldn't be here without the support from amazing people and "
 "organizations who donated money, knowledge and time to help us make this a "
-"reality. If you want to contribute and support our goal, <a "
-"href=\"%(contact_url)s\">please get it touch</a>"
+"reality. If you want to contribute and support our goal, <a href="
+"\"%(contact_url)s\">please get it touch</a>"
 msgstr ""
 "Ohne die Unterstützung von Menschen und Organisationen, die uns mit Geld, "
 "Wissen und Zeit bei der Verwirklichung dieses Projekts geholfen haben, wären "
@@ -6185,11 +6204,11 @@ msgid ""
 "build websites using Python and Django by providing resources and tools "
 "volunteer organizers all over the world."
 msgstr ""
-"Django Girls ist eine ehrenamtlich geführte <a "
-"href=\"%(foundation_url)s\">eingetragene Wohltätigkeitsorganisation</a>. Wir "
-"verwenden Ihre großzügigen Spenden, um Tausenden von Frauen das Erstellen "
-"von Websites mit Python und Django beizubringen, indem wir Ressourcen und "
-"Werkzeuge für freiwillige Organisatoren auf der ganzen Welt bereitstellen."
+"Django Girls ist eine ehrenamtlich geführte <a href=\"%(foundation_url)s"
+"\">eingetragene Wohltätigkeitsorganisation</a>. Wir verwenden Ihre "
+"großzügigen Spenden, um Tausenden von Frauen das Erstellen von Websites mit "
+"Python und Django beizubringen, indem wir Ressourcen und Werkzeuge für "
+"freiwillige Organisatoren auf der ganzen Welt bereitstellen."
 
 #: templates/donations/donate.html:30
 #, python-format
@@ -6219,12 +6238,12 @@ msgstr ""
 #: templates/donations/donate.html:47
 #, python-format
 msgid ""
-"We're transparent about our finances. See our <a "
-"href=\"%(sixteen_seventeen_url)s\">Annual Report for 2016-2017</a> to see "
-"how we spend donations and what impact they made."
+"We're transparent about our finances. See our <a href="
+"\"%(sixteen_seventeen_url)s\">Annual Report for 2016-2017</a> to see how we "
+"spend donations and what impact they made."
 msgstr ""
-"Wir sind transparent, was unsere Finanzen angeht. In unserem <a "
-"href=\"%(sixteen_seventeen_url)s\">Jahresbericht 2016-2017</a> können Sie "
+"Wir sind transparent, was unsere Finanzen angeht. In unserem <a href="
+"\"%(sixteen_seventeen_url)s\">Jahresbericht 2016-2017</a> können Sie "
 "nachlesen, wie wir Spendengelder ausgeben und welche Wirkung sie haben."
 
 #: templates/donations/donate.html:54
@@ -6243,31 +6262,31 @@ msgstr "Monatliche Spenden"
 #: templates/donations/donate.html:75
 msgid ""
 "If you would like to setup a recurring donation, we encourage you to do so "
-"via our <a href=\"https://www.patreon.com/djangogirls\" "
-"target=\"_blank\">Patreon page</a>. Our pledges start at 5 USD per month."
+"via our <a href=\"https://www.patreon.com/djangogirls\" target=\"_blank"
+"\">Patreon page</a>. Our pledges start at 5 USD per month."
 msgstr ""
 "Wenn Sie eine wiederkehrende Spende einrichten möchten, empfehlen wir Ihnen, "
-"dies über unsere <a href=\"https://www.patreon.com/djangogirls\" "
-"target=\"_blank\">Patreon-Seite</a> zu tun. Unsere Zusagen beginnen bei 5 "
-"USD pro Monat."
+"dies über unsere <a href=\"https://www.patreon.com/djangogirls\" target="
+"\"_blank\">Patreon-Seite</a> zu tun. Unsere Zusagen beginnen bei 5 USD pro "
+"Monat."
 
 #: templates/donations/donate.html:83
 #, fuzzy, python-format
 #| msgid ""
 #| "Are you a company interested in sponsoring us? Our <a href=\"https://"
-#| "drive.google.com/file/d/1QVS4_eWu-cZyvbK5-G0x4sXkDg9Xx6eY/view?"
-#| "usp=sharing\">corporate sponsorships</a> start at 100 USD per month. <a "
-#| "href=\"%(contact_url)s\">Contact us!</a> 📨"
+#| "drive.google.com/file/d/1QVS4_eWu-cZyvbK5-G0x4sXkDg9Xx6eY/view?usp=sharing"
+#| "\">corporate sponsorships</a> start at 100 USD per month. <a href="
+#| "\"%(contact_url)s\">Contact us!</a> 📨"
 msgid ""
 "Are you a company interested in sponsoring us? Our <a href=\"https://drive."
-"google.com/file/d/1fAmyAiEyLGiE0s6_z3PzgLByHNKzEVHB/view?"
-"usp=sharing\">corporate sponsorships</a> start at 100 USD per month. <a "
-"href=\"%(contact_url)s\">Contact us!</a> 📨"
+"google.com/file/d/1fAmyAiEyLGiE0s6_z3PzgLByHNKzEVHB/view?usp=sharing"
+"\">corporate sponsorships</a> start at 100 USD per month. <a href="
+"\"%(contact_url)s\">Contact us!</a> 📨"
 msgstr ""
-"Sind Sie als Unternehmen daran interessiert, uns zu sponsern? Unsere <a "
-"href=\"https://drive.google.com/file/d/1QVS4_eWu-cZyvbK5-G0x4sXkDg9Xx6eY/"
-"view?usp=sharing\">Firmenpatenschaften</a> beginnen bei 100 USD pro Monat. "
-"<a href=\"%(kontakt_url)s\">Kontaktieren Sie uns!</a> 📨"
+"Sind Sie als Unternehmen daran interessiert, uns zu sponsern? Unsere <a href="
+"\"https://drive.google.com/file/d/1QVS4_eWu-cZyvbK5-G0x4sXkDg9Xx6eY/view?"
+"usp=sharing\">Firmenpatenschaften</a> beginnen bei 100 USD pro Monat. <a "
+"href=\"%(kontakt_url)s\">Kontaktieren Sie uns!</a> 📨"
 
 #: templates/donations/donate.html:105
 msgid "One-time donations"
@@ -6351,12 +6370,12 @@ msgstr ""
 msgid ""
 "In June 2017, <a href=\"https://blog.djangogirls.org/post/161441111423/"
 "claire-wicher-joins-django-girls-as-awesomeness\"> Claire Wicher</a> joined "
-"us as our Awesomeness Ambassador to take over from where Lucie left. <a "
-"href=\"https://blog.djangogirls.org/post/161441111423/claire-wicher-joins-"
-"django-girls-as-awesomeness\">Claire Wicher</a> as our Awesomeness "
-"Ambassador, is in charge of responding to organizer's requests, handling our "
-"mail, improving our processes, doing administrative tasks, updating the blog "
-"and newsletter, and maintaining the website and resources."
+"us as our Awesomeness Ambassador to take over from where Lucie left. <a href="
+"\"https://blog.djangogirls.org/post/161441111423/claire-wicher-joins-django-"
+"girls-as-awesomeness\">Claire Wicher</a> as our Awesomeness Ambassador, is "
+"in charge of responding to organizer's requests, handling our mail, "
+"improving our processes, doing administrative tasks, updating the blog and "
+"newsletter, and maintaining the website and resources."
 msgstr ""
 "Im Juni 2017 kam <a href=\"https://blog.djangogirls.org/post/161441111423/"
 "claire-wicher-joins-django-girls-as-awesomeness\">Claire Wicher</a> als "
@@ -6444,30 +6463,29 @@ msgstr "Unsere globalen Partner"
 #, fuzzy, python-format
 #| msgid ""
 #| "Our global partners are companies who are supporting our work by donating "
-#| "to us either monthly through <a href=\"https://www.patreon.com/"
-#| "djangogirls\" target=\"_blank\">Patreon</a> or through annual "
-#| "sponsorships. Want to join these amazing companies in sponsoring us? Our "
-#| "<a href=\"https://drive.google.com/file/"
-#| "d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?usp=sharing\">corporate "
-#| "sponsorships</a> start at 100 USD per month. <a "
-#| "href=\"%(contact_url)s\">Contact us!</a> 📨"
+#| "to us either monthly through <a href=\"https://www.patreon.com/djangogirls"
+#| "\" target=\"_blank\">Patreon</a> or through annual sponsorships. Want to "
+#| "join these amazing companies in sponsoring us? Our <a href=\"https://"
+#| "drive.google.com/file/d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?usp=sharing"
+#| "\">corporate sponsorships</a> start at 100 USD per month. <a href="
+#| "\"%(contact_url)s\">Contact us!</a> 📨"
 msgid ""
 "Our global partners are companies who are supporting our work by donating to "
 "us either monthly through <a href=\"https://www.patreon.com/djangogirls\" "
 "target=\"_blank\">Patreon</a> or through annual sponsorships. Want to join "
 "these amazing companies in sponsoring us? Our <a href=\"https://drive.google."
 "com/file/d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?usp=sharing\">corporate "
-"sponsorships</a> start at 100 USD per month. <a "
-"href=\"%(contact_url)s\">Contact us!</a> 📨"
+"sponsorships</a> start at 100 USD per month. <a href=\"%(contact_url)s"
+"\">Contact us!</a> 📨"
 msgstr ""
 "Unsere globalen Partner sind Unternehmen, die unsere Arbeit unterstützen, "
 "indem sie entweder monatlich über <a href=\"https://www.patreon.com/"
 "djangogirls\" target=\"_blank\">Patreon</a> oder durch jährliche "
 "Patenschaften spenden. Möchten Sie sich diesen großartigen Unternehmen "
 "anschließen und uns sponsern? Unsere <a href=\"https://drive.google.com/file/"
-"d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?"
-"usp=sharing\">Unternehmenspatenschaften</a> beginnen bei 100 USD pro Monat. "
-"<a href=\"%(kontakt_url)s\">Kontaktieren Sie uns!</a> 📨"
+"d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?usp=sharing"
+"\">Unternehmenspatenschaften</a> beginnen bei 100 USD pro Monat. <a href="
+"\"%(kontakt_url)s\">Kontaktieren Sie uns!</a> 📨"
 
 #: templates/donations/sponsors.html:21
 msgid "Diamond - $10,000+ per year 💞✨"
@@ -6577,13 +6595,13 @@ msgstr "Spende"
 #: templates/emails/event_thank_you.html:34
 #, python-format
 msgid ""
-"If you have any money leftover from your workshop, consider <a "
-"href=\"%(base_url)s%(donations_url)s\">donating it to Django Girls "
-"Foundation</a>, a non-profit that supports organizers all over the world."
+"If you have any money leftover from your workshop, consider <a href="
+"\"%(base_url)s%(donations_url)s\">donating it to Django Girls Foundation</"
+"a>, a non-profit that supports organizers all over the world."
 msgstr ""
-"Wenn Sie bei Ihrem Workshop Geld übrig haben, können Sie es der <a "
-"href=\"%(base_url)s%(donations_url)s\">Django Girls Foundation</a> spenden, "
-"einer gemeinnützigen Organisation, die Organisatoren in der ganzen Welt "
+"Wenn Sie bei Ihrem Workshop Geld übrig haben, können Sie es der <a href="
+"\"%(base_url)s%(donations_url)s\">Django Girls Foundation</a> spenden, einer "
+"gemeinnützigen Organisation, die Organisatoren in der ganzen Welt "
 "unterstützt."
 
 #: templates/emails/event_thank_you.html:41
@@ -6748,9 +6766,9 @@ msgstr ""
 #| "We also invited you to Django Girls Slack, where we chat, communicate and "
 #| "meet each other!"
 msgid ""
-"Click <a href=\"%(slack_invite_link)s\">this link</a> to join <a "
-"href=\"%(slack_invite_link)s\">Django Girls Slack</a>, where we chat, "
-"communicate and meet each other!"
+"Click <a href=\"%(slack_invite_link)s\">this link</a> to join <a href="
+"\"%(slack_invite_link)s\">Django Girls Slack</a>, where we chat, communicate "
+"and meet each other!"
 msgstr ""
 "Wir haben dich auch zu Django Girls Slack eingeladen, wo wir miteinander "
 "chatten, kommunizieren und uns treffen!"
@@ -6865,17 +6883,17 @@ msgstr ""
 #: templates/emails/organize/application_confirmation.html:25
 msgid ""
 "Share our values: Django Girls events are <b>inclusive</b>, <b>friendly</b> "
-"and provide <b>safe</b> environments that follow an enforced <a "
-"href=\"https://djangogirls.org/pages/coc/\">Code of Conduct</a>. Remember "
-"that Django Girls events are not only aimed to teach people about "
-"programming, but to do it in a <b>friendly</b> and <b>positive</b> way."
+"and provide <b>safe</b> environments that follow an enforced <a href="
+"\"https://djangogirls.org/pages/coc/\">Code of Conduct</a>. Remember that "
+"Django Girls events are not only aimed to teach people about programming, "
+"but to do it in a <b>friendly</b> and <b>positive</b> way."
 msgstr ""
 "Teile unsere Werte: Django Girls Veranstaltungen sind <b>inklusiv</b>, "
-"<b>freundlich</b> und bieten eine <b>sichere</b> Umgebung, die einem <a "
-"href=\"https://djangogirls.org/pages/coc/\">Verhaltenskodex</a> folgt. "
-"Vergessen Sie nicht, dass Django Girls Veranstaltungen nicht nur darauf "
-"abzielen, Menschen das Programmieren beizubringen, sondern dies auch auf "
-"eine <b>freundliche</b> und <b>positive</b> Weise zu tun."
+"<b>freundlich</b> und bieten eine <b>sichere</b> Umgebung, die einem <a href="
+"\"https://djangogirls.org/pages/coc/\">Verhaltenskodex</a> folgt. Vergessen "
+"Sie nicht, dass Django Girls Veranstaltungen nicht nur darauf abzielen, "
+"Menschen das Programmieren beizubringen, sondern dies auch auf eine "
+"<b>freundliche</b> und <b>positive</b> Weise zu tun."
 
 #: templates/emails/organize/application_confirmation.html:33
 #, python-format
@@ -6884,12 +6902,11 @@ msgid ""
 "describes quite well the process of organizing a workshop. You can also read "
 "experiences of other organizers on our blog: <a href=\"http://blog."
 "djangogirls.org/post/152858499038/django-girls-seoul-workshop-2\">Seoul</a>, "
-"<a href=\"http://blog.djangogirls.org/post/143835232733/django-girls-"
-"wroc%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"http://blog."
-"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-"
-"namibia\">Windhoek</a> or <a href=\"http://blog.djangogirls.org/"
-"post/138915381173/a-toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</"
-"a>."
+"<a href=\"http://blog.djangogirls.org/post/143835232733/django-girls-wroc"
+"%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"http://blog."
+"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-namibia"
+"\">Windhoek</a> or <a href=\"http://blog.djangogirls.org/post/138915381173/a-"
+"toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</a>."
 msgstr ""
 "Unser <a href=\"https://organize.djangogirls.org/\">Organizer's Manual</a> "
 "beschreibt recht gut den Prozess der Organisation eines Workshops. Sie "
@@ -7045,11 +7062,11 @@ msgstr "2) Website"
 #: templates/emails/organize/event_deployed.html:42
 #, python-format
 msgid ""
-"Your website address is <a href=\"https://djangogirls.org/"
-"%(page_url)s\">https://djangogirls.org/%(page_url)s</a>"
+"Your website address is <a href=\"https://djangogirls.org/%(page_url)s"
+"\">https://djangogirls.org/%(page_url)s</a>"
 msgstr ""
-"Ihre Website-Adresse lautet <a href=\"https://djangogirls.org/"
-"%(page_url)s\">https://djangogirls.org/%(page_url)s</a>"
+"Ihre Website-Adresse lautet <a href=\"https://djangogirls.org/%(page_url)s"
+"\">https://djangogirls.org/%(page_url)s</a>"
 
 #: templates/emails/organize/event_deployed.html:48
 msgid ""
@@ -7160,20 +7177,20 @@ msgid ""
 "you meet all the requirements to host a workshop carefully, and then read "
 "experiences of other organizers on our blog: <a href=\"https://blog."
 "djangogirls.org/post/152858499038/django-girls-seoul-workshop-2\">Seoul</a>, "
-"<a href=\"https://blog.djangogirls.org/post/143835232733/django-girls-"
-"wroc%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"https://blog."
-"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-"
-"namibia\">Windhoek</a> or <a href=\"https://blog.djangogirls.org/"
-"post/138915381173/a-toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</"
-"a> to see how much work is required to organize the workshop."
+"<a href=\"https://blog.djangogirls.org/post/143835232733/django-girls-wroc"
+"%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"https://blog."
+"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-namibia"
+"\">Windhoek</a> or <a href=\"https://blog.djangogirls.org/post/138915381173/"
+"a-toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</a> to see how "
+"much work is required to organize the workshop."
 msgstr ""
 "Wir haben Ihren Antrag geprüft und sind der Meinung, dass Sie noch ein wenig "
 "mehr planen müssen, bevor wir Ihnen eine positive Antwort geben können. "
 "Bitte lesen Sie unser <a href=\"https://organize.djangogirls.org/"
 "\">Veranstalterhandbuch</a> und vergewissern Sie sich, dass Sie alle "
 "Voraussetzungen für die Ausrichtung eines Workshops sorgfältig erfüllen, und "
-"lesen Sie dann die Erfahrungen anderer Veranstalter in unserem Blog: <a "
-"href=\"https://blog.djangogirls.org/post/152858499038/django-girls-seoul-"
+"lesen Sie dann die Erfahrungen anderer Veranstalter in unserem Blog: <a href="
+"\"https://blog.djangogirls.org/post/152858499038/django-girls-seoul-"
 "workshop-2\">Seoul</a>, <a href=\"https://blog.djangogirls.org/"
 "post/143835232733/django-girls-wroc%%C5%%82aw-3-192-"
 "applications-32\">Wrocław</a>, <a href=\"https://blog.djangogirls.org/"
@@ -7220,11 +7237,10 @@ msgid ""
 "will help us show the global impact that Django Girls is having on the "
 "world! :)"
 msgstr ""
-"Nur eine freundliche Erinnerung daran, <a "
-"href=\"%(base)s%(event_url)s\">dieses Formular auszufüllen</a>, um uns "
-"mitzuteilen, wie viele Personen an Ihrem Workshop teilgenommen haben. Dies "
-"wird uns helfen, den globalen Einfluss, den Django Girls auf die Welt hat, "
-"zu zeigen! :)"
+"Nur eine freundliche Erinnerung daran, <a href=\"%(base)s%(event_url)s"
+"\">dieses Formular auszufüllen</a>, um uns mitzuteilen, wie viele Personen "
+"an Ihrem Workshop teilgenommen haben. Dies wird uns helfen, den globalen "
+"Einfluss, den Django Girls auf die Welt hat, zu zeigen! :)"
 
 #: templates/event/base.html:15 templates/global/base.html:15
 msgid "Django Girls - start your journey with programming"
@@ -7683,10 +7699,10 @@ msgstr ""
 
 #: templates/organize/event_funding.html:46
 msgid ""
-"The DSF has to receive a report of the event via their email <a "
-"href=\"mailto:dsfboard@googlegroups.com\">dsfboard@googlegroups.com</a> "
-"which should be copied to <a href=\"mailto:hello@djangogirls."
-"org\">hello@djangogirls.org</a>."
+"The DSF has to receive a report of the event via their email <a href="
+"\"mailto:dsfboard@googlegroups.com\">dsfboard@googlegroups.com</a> which "
+"should be copied to <a href=\"mailto:hello@djangogirls.org"
+"\">hello@djangogirls.org</a>."
 msgstr ""
 
 #: templates/organize/event_funding.html:53
@@ -7981,12 +7997,11 @@ msgstr ""
 msgid ""
 "<span>Read experiences of other organizers in   <a href=\"http://blog."
 "djangogirls.org/post/152858499038/django-girls-seoul-workshop-2\">Seoul</a>, "
-"<a href=\"http://blog.djangogirls.org/post/143835232733/django-girls-"
-"wroc%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"http://blog."
-"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-"
-"namibia\">Windhoek</a> and <a href=\"http://blog.djangogirls.org/"
-"post/138915381173/a-toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</"
-"a></span>"
+"<a href=\"http://blog.djangogirls.org/post/143835232733/django-girls-wroc"
+"%%C5%%82aw-3-192-applications-32\">Wrocław</a>, <a href=\"http://blog."
+"djangogirls.org/post/139654610313/django-girls-workshop-in-windhoek-namibia"
+"\">Windhoek</a> and <a href=\"http://blog.djangogirls.org/post/138915381173/"
+"a-toolkit-of-awesome-tips-tricks-from-seasoned\">Budapest</a></span>"
 msgstr ""
 "<span>Lesen Sie die Erfahrungen anderer Organisatoren in <a href=\"http://"
 "blog.djangogirls.org/post/152858499038/django-girls-seoul-"
@@ -8179,9 +8194,9 @@ msgid ""
 "more&nbsp;»</a>"
 msgstr ""
 "Die Organisatoren von Django Girls Windhoek, Namibia, berichten über ihre "
-"Erfahrungen bei der Organisation einer Veranstaltung in Afrika. <a "
-"href=\"http://blog.djangogirls.org/post/139654610313/django-girls-workshop-"
-"in-windhoek-namibia\">Weiterlesen&nbsp;\"</a>"
+"Erfahrungen bei der Organisation einer Veranstaltung in Afrika. <a href="
+"\"http://blog.djangogirls.org/post/139654610313/django-girls-workshop-in-"
+"windhoek-namibia\">Weiterlesen&nbsp;\"</a>"
 
 #: templates/organize/index.html:154
 msgid ""
@@ -8192,8 +8207,8 @@ msgid ""
 msgstr ""
 "A Toolkit of Awesome: Tipps & Tricks von erfahrenen Django Girls "
 "Organisatoren in Budapest, Ungarn. <a href=\"http://blog.djangogirls.org/"
-"post/138915381173/a-toolkit-of-awesome-tips-tricks-from-"
-"seasoned\">Weiterlesen&nbsp;\"</a>"
+"post/138915381173/a-toolkit-of-awesome-tips-tricks-from-seasoned"
+"\">Weiterlesen&nbsp;\"</a>"
 
 #: templates/organize/index.html:163
 msgid ""
@@ -8554,23 +8569,23 @@ msgstr ""
 #~ msgstr "Karte der Django Girls Veranstaltung von Juli 2014 bis Juli 2017"
 
 #~ msgid ""
-#~ "Since 2014, an army of <span class=\"highlighted-"
-#~ "number\">%(organizers_count|default_if_none:'0')s volunteers</span> in "
-#~ "the Django Girls community organized <span class=\"highlighted-"
-#~ "number\">%(all_events_count|default_if_none:'0')s events.</span> We've "
-#~ "been to <span class=\"highlighted-number\">%(cities_count|"
-#~ "default_if_none:'0')s cities</span> in <span class=\"highlighted-"
-#~ "number\">%(country_count|default_if_none:'0')s countries</span> (<a "
-#~ "href=\"%(event_map_url)s\">see them all on a map</a>)."
+#~ "Since 2014, an army of <span class=\"highlighted-number\">"
+#~ "%(organizers_count|default_if_none:'0')s volunteers</span> in the Django "
+#~ "Girls community organized <span class=\"highlighted-number\">"
+#~ "%(all_events_count|default_if_none:'0')s events.</span> We've been to "
+#~ "<span class=\"highlighted-number\">%(cities_count|default_if_none:'0')s "
+#~ "cities</span> in <span class=\"highlighted-number\">%(country_count|"
+#~ "default_if_none:'0')s countries</span> (<a href=\"%(event_map_url)s\">see "
+#~ "them all on a map</a>)."
 #~ msgstr ""
-#~ "Seit 2014 organisiert eine Armee von <span class=\"highlighted-"
-#~ "number\">%(organizers_count|default_if_none:'0')s Freiwilligen</span> in "
-#~ "der Django Girls Community <span class=\"highlighted-"
-#~ "number\">%(all_events_count|default_if_none:'0')s Events.</span> Wir "
-#~ "waren in <span class=\"highlighted-number\">%(cities_count|"
-#~ "default_if_none:'0')s cities</span> in <span class=\"highlighted-"
-#~ "number\">%(country_count|default_if_none:'0')s countries</span> (<a "
-#~ "href=\"%(event_map_url)s\">siehe sie alle auf einer Karte</a>)."
+#~ "Seit 2014 organisiert eine Armee von <span class=\"highlighted-number\">"
+#~ "%(organizers_count|default_if_none:'0')s Freiwilligen</span> in der "
+#~ "Django Girls Community <span class=\"highlighted-number\">"
+#~ "%(all_events_count|default_if_none:'0')s Events.</span> Wir waren in "
+#~ "<span class=\"highlighted-number\">%(cities_count|default_if_none:'0')s "
+#~ "cities</span> in <span class=\"highlighted-number\">%(country_count|"
+#~ "default_if_none:'0')s countries</span> (<a href=\"%(event_map_url)s"
+#~ "\">siehe sie alle auf einer Karte</a>)."
 
 #~ msgid ""
 #~ "A total of <span class=\"highlighted-number\">%(attendees_sum|"
@@ -8655,17 +8670,17 @@ msgstr ""
 #~ msgstr "Django Girls Verwaltung"
 
 #~ msgid ""
-#~ "<span class=\"highlighted-number\">$806</span> of <span "
-#~ "class=\"highlighted-number\">$1,500</span> monthly goal pledged"
+#~ "<span class=\"highlighted-number\">$806</span> of <span class="
+#~ "\"highlighted-number\">$1,500</span> monthly goal pledged"
 #~ msgstr ""
-#~ "<span class=\"highlighted-number\">$806</span> von <span "
-#~ "class=\"highlighted-number\">$1.500</span> monatliches Ziel zugesagt"
+#~ "<span class=\"highlighted-number\">$806</span> von <span class="
+#~ "\"highlighted-number\">$1.500</span> monatliches Ziel zugesagt"
 
 #~ msgid ""
 #~ "Are you a company interested in sponsoring us? Our <a href=\"https://"
-#~ "drive.google.com/file/d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?"
-#~ "usp=sharing\">corporate sponsorships</a> start at 100 USD per month. <a "
-#~ "href=\"%(contact_url)s\">Contact us!</a> 📨"
+#~ "drive.google.com/file/d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/view?usp=sharing"
+#~ "\">corporate sponsorships</a> start at 100 USD per month. <a href="
+#~ "\"%(contact_url)s\">Contact us!</a> 📨"
 #~ msgstr ""
 #~ "Sind Sie als Unternehmen daran interessiert, uns zu sponsern? Unsere <a "
 #~ "href=\"https://drive.google.com/file/d/1T2jL9tnu5ZkNvkQRAxd7jlt_BnX7VCLE/"
